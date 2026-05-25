@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Threads Investment Monitor",
+  "schemaVersion": 1,
+  "description": "每日自動從 Threads 熱門財經貼文擷取靈感，產出 Meta 短影音廣告腳本（同伴分享語氣，Lead Ad 用）"
+}
+</script>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Threads 財經短影音發想庫</title>
+<style>
+  :root {
+    --bg: #0f0f0f;
+    --card-bg: #1a1a1a;
+    --card-border: #2a2a2a;
+    --text: #e8e8e8;
+    --text-muted: #888;
+    --accent: #7c3aed;
+    --accent2: #06b6d4;
+    --green: #22c55e;
+    --yellow: #f59e0b;
+    --red: #ef4444;
+    --score5: #22c55e;
+    --score4: #84cc16;
+    --score3: #f59e0b;
+    --score2: #f97316;
+    --score1: #ef4444;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, 'PingFang TC', sans-serif; }
+
+  .header { background: linear-gradient(135deg, #1e0a3c, #0a1628); padding: 20px 24px; border-bottom: 1px solid var(--card-border); }
+  .header h1 { font-size: 1.4rem; font-weight: 700; background: linear-gradient(90deg, #a78bfa, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .header .meta { font-size: 0.8rem; color: var(--text-muted); margin-top: 4px; }
+
+  .stats-bar { display: flex; gap: 12px; padding: 16px 24px; overflow-x: auto; border-bottom: 1px solid var(--card-border); }
+  .stat { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 10px; padding: 12px 16px; min-width: 120px; text-align: center; }
+  .stat-num { font-size: 1.6rem; font-weight: 700; color: #a78bfa; }
+  .stat-label { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+
+  .controls { padding: 14px 24px; display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid var(--card-border); align-items: center; }
+  .filter-btn { background: var(--card-bg); border: 1px solid var(--card-border); color: var(--text-muted); padding: 6px 14px; border-radius: 20px; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; }
+  .filter-btn:hover, .filter-btn.active { background: var(--accent); border-color: var(--accent); color: white; }
+  .sort-label { font-size: 0.8rem; color: var(--text-muted); margin-left: 8px; }
+  .sort-btn { background: var(--card-bg); border: 1px solid var(--card-border); color: var(--text-muted); padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 0.78rem; }
+  .sort-btn.active { border-color: var(--accent2); color: var(--accent2); }
+
+  .cards { padding: 16px 24px; display: grid; gap: 14px; }
+
+  .card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 16px; transition: border-color 0.2s; position: relative; }
+  .card:hover { border-color: #444; }
+  .card.score5 { border-left: 3px solid var(--score5); }
+  .card.score4 { border-left: 3px solid var(--score4); }
+  .card.score3 { border-left: 3px solid var(--score3); }
+  .card.score2 { border-left: 3px solid var(--score2); }
+  .card.score1 { border-left: 3px solid var(--score1); }
+
+  .card-header { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+  .avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #7c3aed, #06b6d4); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; color: white; }
+  .author-info { flex: 1; }
+  .author-name { font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; }
+  .verified { background: #1d9bf0; color: white; font-size: 0.6rem; padding: 1px 5px; border-radius: 3px; }
+  .author-meta { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+
+  .hook { font-size: 0.95rem; font-weight: 600; color: #e2e8f0; line-height: 1.4; margin-bottom: 8px; }
+  .summary { font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 12px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .tag { font-size: 0.7rem; padding: 3px 8px; border-radius: 12px; font-weight: 500; }
+  .tag-group { background: #1e1b4b; color: #a5b4fc; border: 1px solid #3730a3; }
+  .tag-hook { background: #0c1a1a; color: var(--accent2); border: 1px solid #164e63; }
+  .tag-pack { background: #052e16; color: #86efac; border: 1px solid #166534; }
+  .tag-video { background: #1c1917; color: #d6d3d1; border: 1px solid #44403c; }
+  .tag-new { background: #4c1d95; color: #fde047; border: 1px solid #7e22ce; font-weight: 700; }
+  .tag-rising { background: #7c2d12; color: #fde68a; border: 1px solid #b45309; font-weight: 700; }
+
+  .metrics { display: flex; gap: 16px; margin-bottom: 10px; flex-wrap: wrap; }
+  .metric { display: flex; align-items: center; gap: 4px; font-size: 0.78rem; }
+  .metric-icon { font-size: 0.9rem; }
+  .metric-val { color: #e2e8f0; font-weight: 500; }
+  .metric-label { color: var(--text-muted); }
+
+  .score-row { display: flex; align-items: center; gap: 8px; }
+  .score-badge { width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; }
+  .score-note { font-size: 0.75rem; color: var(--text-muted); flex: 1; }
+
+  .card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--card-border); }
+  .view-link { font-size: 0.75rem; color: #a78bfa; text-decoration: none; }
+  .view-link:hover { text-decoration: underline; }
+
+  .likes-big { font-size: 1.1rem; font-weight: 700; color: #fbbf24; }
+
+  /* Group color map */
+  .g1 { color: #f87171; }
+  .g2 { color: #34d399; }
+  .g3 { color: #60a5fa; }
+  .g4 { color: #a78bfa; }
+  .g5 { color: #fb923c; }
+  .g6 { color: #f472b6; }
+  .g7 { color: #22d3ee; }
+
+  /* Meta Ad Scripts Section */
+  #meta-ad-scripts { margin: 0 24px 24px; }
+  #meta-ad-scripts h2 { font-size: 1.1rem; font-weight: 700; color: #a78bfa; margin-bottom: 12px; padding-top: 16px; border-top: 1px solid var(--card-border); }
+  .script-card { background: #0d1117; border: 1px solid #30363d; border-radius: 12px; padding: 18px; margin-bottom: 16px; }
+  .script-card h3 { font-size: 0.9rem; font-weight: 700; color: #f0c040; margin-bottom: 8px; }
+  .script-meta { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+  .script-badge { font-size: 0.7rem; padding: 3px 8px; border-radius: 10px; }
+  .sb-pack { background: #052e16; color: #86efac; border: 1px solid #166534; }
+  .sb-dur { background: #1e1b4b; color: #a5b4fc; border: 1px solid #3730a3; }
+  .sb-reason { background: #1c1917; color: #d6d3d1; border: 1px solid #44403c; }
+  .script-body { font-size: 0.8rem; line-height: 1.8; color: #cdd9e5; white-space: pre-wrap; font-family: monospace; background: #0a0f14; padding: 12px; border-radius: 8px; overflow-x: auto; }
+
+  /* About Panel */
+  .about-toggle { width: 100%; background: #111827; border: none; border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border); color: #6b7280; font-size: 0.78rem; padding: 9px 24px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+  .about-toggle:hover { color: var(--text); background: #0f172a; }
+  .about-panel { background: #0d1117; border-bottom: 1px solid var(--card-border); overflow: hidden; max-height: 0; transition: max-height 0.4s ease; }
+  .about-panel.open { max-height: 900px; }
+  .about-inner { padding: 18px 24px 22px; display: grid; gap: 16px; }
+  @media (min-width: 900px) { .about-inner { grid-template-columns: 1fr 1fr; } }
+  .about-block { }
+  .about-block h4 { font-size: 0.72rem; color: var(--accent2); font-weight: 700; margin-bottom: 8px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .about-block p { font-size: 0.78rem; color: #9ca3af; line-height: 1.75; margin-bottom: 4px; }
+  .about-block ul { padding-left: 0; list-style: none; }
+  .about-block li { font-size: 0.78rem; color: #9ca3af; line-height: 1.7; padding-left: 12px; position: relative; margin-bottom: 2px; }
+  .about-block li::before { content: '·'; position: absolute; left: 0; color: var(--accent2); }
+  .kw-tag { display: inline-block; background: #1e1b4b; color: #a5b4fc; border: 1px solid #3730a3; border-radius: 10px; padding: 2px 8px; font-size: 0.68rem; margin: 2px 2px 0 0; }
+  .g-row { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 5px; }
+  .g-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+  .g-text { font-size: 0.76rem; color: #9ca3af; line-height: 1.5; }
+  .g-name { font-weight: 600; color: #d1d5db; }
+  .about-note { background: #1a1a2e; border: 1px solid #3730a3; border-radius: 8px; padding: 10px 14px; font-size: 0.76rem; color: #a5b4fc; line-height: 1.6; margin-top: 4px; }
+
+  /* Extra filter controls */
+  .filter-sep { width: 1px; height: 18px; background: var(--card-border); margin: 0 6px; align-self: center; }
+  .likes-range { display: flex; align-items: center; gap: 6px; }
+  .likes-range input[type=range] { width: 88px; accent-color: var(--accent); cursor: pointer; }
+  .likes-range .rv { color: var(--accent2); font-size: 0.78rem; font-weight: 600; min-width: 46px; }
+  .date-btns { display: flex; gap: 4px; }
+  .date-btns button { background: var(--card-bg); border: 1px solid var(--card-border); color: var(--text-muted); padding: 5px 10px; border-radius: 6px; cursor: pointer; font-size: 0.75rem; transition: all 0.15s; }
+  .date-btns button.active { border-color: var(--accent2); color: var(--accent2); }
+
+  .hidden { display: none; }
+
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🎬 Threads 財經短影音發想庫</h1>
+  <div class="meta">快照日期：2026-05-25 ｜ 篩選條件：讚 ≥ 1,000 × 17 天內 × 繁體中文</div>
+</div>
+
+<button class="about-toggle" onclick="toggleAbout()" id="about-btn">
+  📖 關於此工具 · 使用說明 &nbsp;<span id="about-arrow">▼ 展開</span>
+</button>
+<div class="about-panel" id="about-panel">
+  <div class="about-inner">
+
+    <div class="about-block">
+      <h4>🎯 這個工具是什麼</h4>
+      <p>每天中午 12:00 自動掃描 Threads 上的財經熱門貼文，篩選出「讚數高、有改編潛力」的內容，並產出 Meta 短影音廣告腳本。</p>
+      <p>腳本語氣定位：<strong style="color:#e2e8f0">同伴分享感</strong>——「我發現好東西，想分享給你」，不是講師說教。</p>
+      <p>廣告目的：觀眾看完後填表，免費領取懶人包，後續業務跟進。</p>
+    </div>
+
+    <div class="about-block">
+      <h4>🔍 監測關鍵字</h4>
+      <div style="margin-bottom:8px">
+        <span class="kw-tag">投資</span><span class="kw-tag">台股</span><span class="kw-tag">理財</span><span class="kw-tag">存股</span><span class="kw-tag">選股</span><span class="kw-tag">高股息</span><span class="kw-tag">投資理財</span><span class="kw-tag">美股</span>
+      </div>
+      <p>預設篩選：讚數 ≥ 1,000 · 17 天內 · 繁體中文</p>
+      <p>排除：韓文/英文貼文、報明牌話術、違反 Meta 廣告政策的內容</p>
+    </div>
+
+    <div class="about-block">
+      <h4>📋 如何使用</h4>
+      <ul>
+        <li>每天中午排程執行後，重整頁面即看到最新資料</li>
+        <li>用上方按鈕依群組篩選貼文類型</li>
+        <li>卡片左側色條 + 數字 = 模仿分數（1–5），越高越適合改編為廣告</li>
+        <li>滾到最下方看今日產出的 Meta 廣告腳本</li>
+        <li>可調整下方「讚數門檻」和「天數範圍」自訂顯示條件</li>
+      </ul>
+    </div>
+
+    <div class="about-block">
+      <h4>🗂️ 貼文分群說明</h4>
+      <div class="g-row"><div class="g-dot" style="background:#f87171"></div><div class="g-text"><span class="g-name">G1 盤後評論</span> — 個股觀點、當日盤況、股市短評</div></div>
+      <div class="g-row"><div class="g-dot" style="background:#34d399"></div><div class="g-text"><span class="g-name">G2 勵志案例</span> — 真人存錢/投資里程碑故事，廣告改編首選</div></div>
+      <div class="g-row"><div class="g-dot" style="background:#60a5fa"></div><div class="g-text"><span class="g-name">G3 理財觀念</span> — 人生階段論、長期思維、心態建立</div></div>
+      <div class="g-row"><div class="g-dot" style="background:#a78bfa"></div><div class="g-text"><span class="g-name">G4 教學技巧</span> — 操作方法、選股清單、工具介紹</div></div>
+      <div class="g-row"><div class="g-dot" style="background:#fb923c"></div><div class="g-text"><span class="g-name">G5 宏觀政策</span> — 總經、市場評論、新聞解讀</div></div>
+      <div class="g-row"><div class="g-dot" style="background:#f472b6"></div><div class="g-text"><span class="g-name">G6 新手討論</span> — 求問、入門疑惑、社群互動</div></div>
+      <div class="g-row"><div class="g-dot" style="background:#22d3ee"></div><div class="g-text"><span class="g-name">G7 節目筆記</span> — 財經節目摘要、二創整理</div></div>
+      <div class="about-note">💡 若發現新型態貼文（G8、G9 等），可回報給維護者，下次排程會納入新群組</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num" id="stat-total">21</div><div class="stat-label">候選貼文</div></div>
+  <div class="stat"><div class="stat-num" id="stat-hot">12</div><div class="stat-label">今日熱門 (≥1800)</div></div>
+  <div class="stat"><div class="stat-num" id="stat-score5">4</div><div class="stat-label">模仿分數 5⭐</div></div>
+  <div class="stat"><div class="stat-num" id="stat-scripts">3</div><div class="stat-label">廣告腳本</div></div>
+  <div class="stat"><div class="stat-num" id="stat-top-likes">1.0萬</div><div class="stat-label">今日最高讚數</div></div>
+</div>
+
+<div class="controls">
+  <span style="font-size:0.8rem;color:var(--text-muted);margin-right:4px;">分群篩選：</span>
+  <button class="filter-btn active" data-group="all">全部</button>
+  <button class="filter-btn" data-group="G1">G1 盤後評論</button>
+  <button class="filter-btn" data-group="G2">G2 勵志案例</button>
+  <button class="filter-btn" data-group="G3">G3 理財觀念</button>
+  <button class="filter-btn" data-group="G4">G4 教學技巧</button>
+  <button class="filter-btn" data-group="G7">G7 節目筆記</button>
+  <div class="filter-sep"></div>
+  <span class="sort-label">讚數 ≥</span>
+  <div class="likes-range">
+    <input type="range" id="likes-slider" min="500" max="5000" step="100" value="1000">
+    <span class="rv" id="likes-val">1,000</span>
+  </div>
+  <div class="filter-sep"></div>
+  <span class="sort-label">天數：</span>
+  <div class="date-btns" id="date-btns">
+    <button data-days="7">7天</button>
+    <button data-days="14">14天</button>
+    <button data-days="17" class="active">17天</button>
+    <button data-days="30">30天</button>
+  </div>
+  <div class="filter-sep"></div>
+  <span class="sort-label">排序：</span>
+  <button class="sort-btn active" data-sort="likes">讚數 ↓</button>
+  <button class="sort-btn" data-sort="score">模仿分 ↓</button>
+  <button class="sort-btn" data-sort="date">日期 ↓</button>
+</div>
+
+<div class="cards" id="cards-container"></div>
+
+<section id="meta-ad-scripts">
+  <h2>🎬 今日 Meta 廣告腳本（3 則）</h2>
+  <div id="scripts-container"></div>
+</section>
+
+<script>
+const DATA = {"snapshot_date":"2026-05-25","candidates":[{"id":"DYtHyqiCeJG","author":"pumashen","verified":true,"date":"2026-05-24","url":"/@pumashen/post/DYtHyqiCeJG","likes":10000,"comments":220,"reposts":null,"shares":null,"has_video":false,"hook":"我真的覺得很奇怪，把錢拿去買台積電為什麼會變成理財有問題⋯⋯","summary":"用一句話戳到小白痛點：身邊人把買龍頭股說成「理財有問題」。一萬讚＋220留言，引爆「什麼才算理財」的世代對話。","group":"G3","group_name":"理財觀念／階段論","has_pack":false,"hook_type":"反問＋世代衝突","imitate_score":5,"imitate_note":"標準小白痛點：被人質疑用錯方法。一句話、零專有名詞、共鳴最強，廣告改編首選。","is_new":true},{"id":"DYOZpEXmVhw","author":"norm__mia","verified":false,"date":"2026-05-12","url":"/@norm__mia/post/DYOZpEXmVhw","likes":7806,"comments":296,"reposts":null,"shares":600,"has_video":false,"hook":"小資存股兩年終於存到三十萬了😭","summary":"25歲開始強迫自己每月存5000-10000，兩年累積到30萬。呼籲大家不嫌晚，一起加油。","group":"G2","group_name":"勵志／案例分享","has_pack":false,"hook_type":"案例＋數字里程碑","imitate_score":5,"imitate_note":"小白共鳴最強：具體數字（30萬）+ 時間（2年）+ 年齡起點（25歲），存錢議題廣告首選。"},{"id":"DYHS3YrkRts","author":"30plus.project","verified":false,"date":"2026-05-09","url":"/@30plus.project/post/DYHS3YrkRts","likes":7264,"comments":1173,"reposts":1217,"shares":7904,"has_video":false,"hook":"第一屆《用Claude做的股票、記帳》交流大會 正式開始！！","summary":"邀請大家用 Claude 做股票、記帳工具的交流大會。互動量驚人（7,264讚＋1,173留言＋7,904分享）。","group":"G4","group_name":"教學／操作技巧","has_pack":false,"hook_type":"社群號召","imitate_score":3,"imitate_note":"互動量超高但題材偏 AI 工具，小白較難共鳴。","is_new":true},{"id":"DYntFIEEhom","author":"aj093629","verified":true,"date":"2026-05-22","url":"/@aj093629/post/DYntFIEEhom","likes":4262,"comments":363,"reposts":null,"shares":523,"has_video":false,"hook":"早安 親愛的大家","summary":"3 天內讚數從 3,687 漲到 4,262（+15.6%）。早盤觀念分享：股票大漲大跌時要找出原因，強調「獲利是時間等出來的」。","group":"G1","group_name":"盤後評論／個股觀點","has_pack":false,"hook_type":"勵志格言","imitate_score":3,"imitate_note":"個股特定性太強，廣告較難改編給小白，但格言結構可借鏡。","is_rising":true,"delta_pct":15.6},{"id":"DYuMZDsidJ8","author":"uncle_stock","verified":true,"date":"2026-05-24","url":"/@uncle_stock/post/DYuMZDsidJ8","likes":4221,"comments":null,"reposts":null,"shares":977,"has_video":false,"hook":"好的，美股台股請開始你們的表演","summary":"週日晚的盤前期待短評，簡短一句話卻換來 4,221 讚＋977 分享。","group":"G1","group_name":"盤後評論／個股觀點","has_pack":false,"hook_type":"輕鬆短評","imitate_score":2,"imitate_note":"純情緒短評，廣告改編困難。","is_new":true},{"id":"DYucM5WE3Jf","author":"hamihoney","verified":true,"date":"2026-05-24","url":"/@hamihoney/post/DYucM5WE3Jf","likes":3992,"comments":null,"reposts":null,"shares":1300,"has_video":true,"hook":"這禮拜精彩了❗️黃仁勳爸爸來台+股東會爆棚⭐️","summary":"本週股東會行事曆＋黃仁勳來台預告，列出每日重點個股。分享數高達 1,300。","group":"G1","group_name":"盤後評論／個股觀點","has_pack":false,"hook_type":"週行事曆","imitate_score":2,"imitate_note":"資訊型清單貼文，小白觀眾不適合，廣告難改編。","is_new":true},{"id":"DYd_cCxErve","author":"aj093629","verified":true,"date":"2026-05-18","url":"/@aj093629/post/DYd_cCxErve","likes":3550,"comments":365,"reposts":null,"shares":480,"has_video":true,"hook":"我說 景碩很好…別人看到的是跌勢 我看到的是 提款機！","summary":"用「我說 / 我看到」對仗句型回顧多檔個股看好理由。「提款機」金句引爆 3,550 讚。","group":"G1","group_name":"盤後評論／個股觀點","has_pack":false,"hook_type":"對仗金句","imitate_score":2,"imitate_note":"個股名稱密集，違反 Meta 廣告政策的明牌暗示，不適合改編。","is_new":true},{"id":"DYmHUtwkmYl","author":"aj093629","verified":true,"date":"2026-05-21","url":"/@aj093629/post/DYmHUtwkmYl","likes":3322,"comments":223,"reposts":null,"shares":null,"has_video":false,"hook":"「傭人」","summary":"老闆讓員工出發旅遊，自己留守家務。同時分享台股存股心法：信仰操作 vs 靈活調節，把股市當提款機。","group":"G2","group_name":"勵志／案例分享","has_pack":false,"hook_type":"反差故事","imitate_score":4,"imitate_note":"老闆vs員工反差畫面感強，今日新腳本選用，對應巴菲特 ETF 懶人包。"},{"id":"DYvik_PEoJk","author":"aj093629","verified":true,"date":"2026-05-25","url":"/@aj093629/post/DYvik_PEoJk","likes":2805,"comments":251,"reposts":null,"shares":107,"has_video":false,"hook":"我說 台玻 可以買 目標價 75 達成！！","summary":"盤中宣布喊到的個股達標。當日新貼文，2,805 讚。","group":"G1","group_name":"盤後評論／個股觀點","has_pack":false,"hook_type":"戰績宣告","imitate_score":1,"imitate_note":"目標價達成型，違反 Meta 廣告政策（暗示明牌），不可改編。","is_new":true},{"id":"DYSXO_YgbyG","author":"uncle_stock","verified":true,"date":"2026-05-14","url":"/@uncle_stock/post/DYSXO_YgbyG","likes":2465,"comments":null,"reposts":null,"shares":227,"has_video":false,"hook":"美股最大市值公司NVDA創歷史新高","summary":"NVDA 創高的新聞短訊，2,465 讚。","group":"G1","group_name":"盤後評論／個股觀點","has_pack":false,"hook_type":"新聞短訊","imitate_score":2,"imitate_note":"純新聞短訊，廣告改編空間有限。","is_new":true},{"id":"DYvlOgokzvu","author":"hamihoney","verified":true,"date":"2026-05-25","url":"/@hamihoney/post/DYvlOgokzvu","likes":2244,"comments":158,"reposts":null,"shares":null,"has_video":true,"hook":"兄弟姐妹們大家早🙂‍↕️ 發哥又噴啦","summary":"早盤摘要＋個股觀察，2,244 讚。","group":"G1","group_name":"盤後評論／個股觀點","has_pack":false,"hook_type":"早盤摘要","imitate_score":2,"imitate_note":"資訊播報型，不適合直接改編成廣告。","is_new":true},{"id":"DYMqUPVk2NB","author":"aj093629","verified":true,"date":"2026-05-11","url":"/@aj093629/post/DYMqUPVk2NB","likes":2217,"comments":null,"reposts":null,"shares":143,"has_video":false,"hook":"同事跟我說 他跟老婆已經討論好 決定拿房子去貸款買股","summary":"盤後分享同事打算拿房子去貸款買股的故事，警告融資暴增＋槓桿過大會把獲利瞬間吃掉。強調「股市不賠就是贏家」。","group":"G3","group_name":"理財觀念／階段論","has_pack":false,"hook_type":"反差案例＋警惕","imitate_score":5,"imitate_note":"極強畫面感：拿房子貸款 all-in 的反差。打到「不要 all-in、要有方法」的小白教育議題。今日新腳本選用。","is_new":true},{"id":"DYrcR4DErEc","author":"mdkr334","verified":false,"date":"2026-05-23","url":"/@mdkr334/post/DYrcR4DErEc","likes":2029,"comments":null,"reposts":138,"shares":1805,"has_video":false,"hook":"🐸 股癌 EP664｜AI 算力獲利證實，被動元件全面開噴","summary":"股癌 EP664 筆記：Anthropic 轉獲利、xAI Colossus 1 出租回本、Google + Blackstone 殺進 TPU。1,805 分享高。","group":"G7","group_name":"節目筆記／二創","has_pack":false,"hook_type":"節目筆記","imitate_score":3,"imitate_note":"節目筆記受眾黏性高，但題材太硬，小白觀眾接受度低。","is_new":true},{"id":"DYvhMz6mMIW","author":"bearstock2021","verified":true,"date":"2026-05-25","url":"/@bearstock2021/post/DYvhMz6mMIW","likes":2042,"comments":null,"reposts":null,"shares":null,"has_video":false,"hook":"對不起……破千了😢，希望你們有賺到","summary":"盤中喊到台股大漲千點的「反指標式」短帖，2,042 讚。","group":"G1","group_name":"盤後評論／個股觀點","has_pack":false,"hook_type":"反差／梗圖","imitate_score":2,"imitate_note":"情境梗，廣告改編空間有限。","is_new":true},{"id":"DYnwNpQE9rt","author":"hamihoney","verified":true,"date":"2026-05-22","url":"/@hamihoney/post/DYnwNpQE9rt","likes":1951,"comments":null,"reposts":null,"shares":195,"has_video":false,"hook":"兄弟姐妹們大家早🙂‍↕️ 又是美好的一天","summary":"3 天內讚數從 1,580 漲到 1,951（+23.5%）。早盤摘要：美股道瓊續創歷史新高、超微百億美元投資台灣、半導體材料革命。","group":"G1","group_name":"盤後評論／個股觀點","has_pack":false,"hook_type":"早盤摘要","imitate_score":2,"imitate_note":"資訊播報型，不適合直接改編成廣告。","is_rising":true,"delta_pct":23.5},{"id":"DYnzO-KE1mS","author":"ajhsu0820","verified":false,"date":"2026-05-22","url":"/@ajhsu0820/post/DYnzO-KE1mS","likes":1843,"comments":249,"reposts":null,"shares":179,"has_video":false,"hook":"我爸已經73歲系列21 縱橫股市30年總計賠掉2間房子","summary":"73歲爸爸30年股市老手卻累積賠了2間房。今天決定全數賣出，覺得科技高價股「看不懂」。","group":"G2","group_name":"勵志／案例分享","has_pack":false,"hook_type":"系列故事＋反差衝突","imitate_score":5,"imitate_note":"73歲老手賠2間房的反差，對小白衝擊力超強。"},{"id":"DYSNlsqk36U","author":"ai_j_2026.12","verified":true,"date":"2026-05-13","url":"/@ai_j_2026.12/post/DYSNlsqk36U","likes":1538,"comments":null,"reposts":null,"shares":605,"has_video":true,"hook":"［股癌 EP661筆記整理]","summary":"股癌EP661筆記：盤勢轉弱防守股策略、超額報酬方法、被動元件族群分析、消費性電子復甦追蹤。","group":"G7","group_name":"節目筆記／二創","has_pack":false,"hook_type":"節目筆記","imitate_score":3,"imitate_note":"節目筆記受眾黏性高，但小白接受度較低。"},{"id":"DYPhK3HHSZ6","author":"dr.agree88","verified":true,"date":"2026-05-12","url":"/@dr.agree88/post/DYPhK3HHSZ6","likes":1414,"comments":null,"reposts":null,"shares":null,"has_video":false,"hook":"剛錄完Podcast回到家，看了下美股。今天可以早睡了各位","summary":"美股盤後輕鬆評論，1,414 讚。","group":"G1","group_name":"盤後評論／個股觀點","has_pack":false,"hook_type":"短評","imitate_score":2,"imitate_note":"純短評，廣告改編空間有限。","is_new":true},{"id":"DYO8GjvE75Z","author":"kktttt1234","verified":false,"date":"2026-05-12","url":"/@kktttt1234/post/DYO8GjvE75Z","likes":1325,"comments":null,"reposts":null,"shares":null,"has_video":false,"hook":"25歲真的很早了！怎可能嫌晚。我2年多前才開始存股的⋯⋯現在都快48歲了","summary":"47歲才開始存股，對25歲說嫌晚感到不解。引發共鳴，任何年齡都可以開始投資。","group":"G2","group_name":"勵志／案例分享","has_pack":false,"hook_type":"反差＋勵志","imitate_score":4,"imitate_note":"年齡焦慮切入點強，反差適合廣告開場。"},{"id":"DYbyWqykZ9q","author":"ai_j_2026.12","verified":true,"date":"2026-05-17","url":"/@ai_j_2026.12/post/DYbyWqykZ9q","likes":1076,"comments":null,"reposts":null,"shares":458,"has_video":true,"hook":"［股癌 EP662筆記整理]","summary":"股癌EP662筆記：殺盤時要不要跟著減碼、區分長投與動能部位、中小股疲軟時機、機會成本思維。","group":"G7","group_name":"節目筆記／二創","has_pack":false,"hook_type":"節目筆記","imitate_score":3,"imitate_note":"概念偏硬，小白接受度較低。"},{"id":"DYYxrHpGad3","author":"tetsu_chang_","verified":true,"date":"2026-05-16","url":"/@tetsu_chang_/post/DYYxrHpGad3","likes":1011,"comments":null,"reposts":null,"shares":null,"has_video":false,"hook":"怎麼突然超過5萬粉了 ❗️❓","summary":"達到5萬粉絲里程碑的感謝帖，提醒大盤震盪市不要過度盯盤，應多陪伴家人。","group":"G3","group_name":"理財觀念／階段論","has_pack":false,"hook_type":"里程碑感謝","imitate_score":2,"imitate_note":"里程碑貼文廣告改編空間有限。"}]};
+
+const SCRIPTS = [
+  {
+    n: 1,
+    author: "pumashen",
+    likes: "1.0萬",
+    url: "https://www.threads.com/@pumashen/post/DYtHyqiCeJG",
+    reason: "當日全網爆款，痛點打到「想理財卻被家人罵」的世代衝突",
+    pack: "100 個財經專有名詞",
+    duration: "30 秒",
+    hookStyle: "🎯 痛點共鳴",
+    script: `【開場 Hook（0-3 秒）｜風格：痛點共鳴（我也這樣）】
+口白：「我家人前幾天還說我把錢拿去買龍頭股『就是理財有問題』，我整個傻眼——我整理了一份小白懶人包，免費分享給你。」
+畫面建議：白字卡「『你這樣就是理財有問題』」→ 切到主角無奈表情 emoji → 反問字卡「真的嗎？」
+
+【主體內容（3-25 秒）】
+口白（完整逐字稿，約 100 字）：
+- 重點 1（約 7 秒）：「我也是剛開始學，每次跟家人聊投資，他們聽到不熟的詞就說我亂搞，我超挫折。」配畫面：聊天泡泡跳出「殖利率？ETF？這什麼？」打問號
+- 重點 2（約 8 秒）：「後來我發現，問題不是我做錯，是我們講的語言不一樣——他們不懂這些詞，我也沒辦法解釋。」配畫面：「100 個財經名詞」目錄手翻畫面，幾個關鍵字（ETF、本益比、殖利率）依序高亮
+- 重點 3（約 7 秒）：「我把最常被誤會、最常用到的 100 個名詞整理成懶人包，看完就能跟任何人聊投資。」配畫面：懶人包封面滑入＋「免費」橘色貼紙
+
+【結尾 CTA（25-30 秒）】
+口白（固定）：「點擊下方按鈕填寫表單，免費領取懶人包」
+畫面建議：懶人包封面圖 + 箭頭指向 Meta 廣告按鈕 + 「免費領取」字卡閃動
+
+💡 廣告主文案（Primary Text，3 選 1）：
+1. 我也常被家人說「亂理財」，後來才發現問題是我們聽不懂同一套詞。我把 100 個最常用的財經名詞整理成懶人包，免費分享給你——填寫下方表單馬上領取👇
+2. 看到一句話戳到我：「把錢拿去買龍頭股就是理財有問題？」我整理了 100 個小白必懂的詞，要不要一起學？
+3. 我也是看不懂財經新聞的人，後來整理了一份名詞懶人包，現在跟誰都能聊。免費分享給你。
+
+📰 廣告標題（Headline，3 選 1）：
+1. 看不懂的詞我都整理好了，免費
+2. 100 個小白該懂的財經詞，我整理好了
+3. 我整理了這份名詞懶人包想分享
+
+🔘 CTA 按鈕：免費下載
+#️⃣ 自然觸及備用 Hashtag：#投資理財 #小資 #財經名詞`
+  },
+  {
+    n: 2,
+    author: "aj093629",
+    likes: "2,217",
+    url: "https://www.threads.com/@aj093629/post/DYMqUPVk2NB",
+    reason: "同事拿房子貸款 all-in 的衝擊畫面，自然引出「要靠方法、不要靠槓桿」的策略需求",
+    pack: "5 種台股賺錢策略",
+    duration: "30 秒",
+    hookStyle: "💥 衝擊分享",
+    script: `【開場 Hook（0-3 秒）｜風格：衝擊分享（我看到一個讓我震撼的東西）】
+口白：「我看到一個人說，他同事跟老婆討論好要把房子拿去貸款買股票——我看完整個傻掉，趕快整理了一份免費懶人包要分享給你。」
+畫面建議：「房子→拿去貸款→買股票」三個字卡依序炸出，紅色框越來越粗
+
+【主體內容（3-25 秒）】
+口白（完整逐字稿，約 105 字）：
+- 重點 1（約 8 秒）：「我也才剛開始學，看到這個就覺得超危險——萬一一波回檔，房子可能就回不來了。」配畫面：折線圖快速向下，房子圖示出現裂痕
+- 重點 2（約 8 秒）：「他們不是不努力，是用錯方法。沒有計畫的 all-in，比不投資還可怕。」配畫面：紅色 ⚠️ 字卡「沒方法 ≠ 努力」
+- 重點 3（約 7 秒）：「我整理了 5 種台股操作思路，全部不用借錢、不用 all-in，分享給你少走幾年彎路。」配畫面：5 個策略卡片陸續翻出，懶人包封面收尾
+
+【結尾 CTA（25-30 秒）】
+口白（固定）：「點擊下方按鈕填寫表單，免費領取懶人包」
+畫面建議：懶人包封面圖 + 箭頭指向 Meta 廣告按鈕 + 「免費領取」字卡閃動
+
+💡 廣告主文案（Primary Text，3 選 1）：
+1. 我看到一個人說他同事要拿房子貸款買股票，我看完傻眼。趕快整理 5 種正常人也能上手的台股策略，免費分享給你——填寫下方表單馬上領取👇
+2. 想投資不代表要把家當壓上去。我把 5 種比較穩的台股操作思路整理成懶人包，免費給你，少走幾年彎路。
+3. 我也才剛開始學，看到拿房子貸款買股的故事很有感。我整理的 5 種策略沒有 all-in、沒有借錢，要不要一起看？
+
+📰 廣告標題（Headline，3 選 1）：
+1. 拿房貸買股？我整理了 5 個方法
+2. 我也是新手，這 5 種策略想分享
+3. 不 all-in 也能玩台股的 5 個方法
+
+🔘 CTA 按鈕：了解詳情
+#️⃣ 自然觸及備用 Hashtag：#投資理財 #小資 #台股策略`
+  },
+  {
+    n: 3,
+    author: "aj093629",
+    likes: "3,322",
+    url: "https://www.threads.com/@aj093629/post/DYmHUtwkmYl",
+    reason: "老闆讓員工去玩、自己收股息的畫面感極強，自然帶到長期 ETF 領息的故事",
+    pack: "巴菲特給孩子的 5 個 ETF 投資策略",
+    duration: "25 秒",
+    hookStyle: "📖 好東西分享",
+    script: `【開場 Hook（0-3 秒）｜風格：好東西分享（我看到一個讓我安心的東西）】
+口白：「我看到一個故事讓我超有感：一個老闆讓員工去出國玩，自己留下來顧家、看股息——我整理了他用的方法，免費分享給你。」
+畫面建議：飛機起飛＋員工拖行李箱動畫 → 切到老闆在家泡咖啡＋手機跳出股息入帳通知
+
+【主體內容（3-22 秒）】
+口白（完整逐字稿，約 90 字）：
+- 重點 1（約 7 秒）：「他說他年輕的時候也是急著賺價差，後來才發現，讓錢自己慢慢長大才是最舒服的。」配畫面：時鐘加速旋轉＋帳戶數字緩慢爬升
+- 重點 2（約 8 秒）：「他靠的方法很簡單，就是巴菲特給孩子的那 5 個 ETF 策略，每年固定買、固定領。」配畫面：5 個 ETF 卡片依序出現，配「每年買、每年領」字卡
+- 重點 3（約 5 秒）：「我把這 5 個方法整理成懶人包，覺得太實用，免費分享給你。」配畫面：懶人包封面滑入＋「免費」紅色貼紙
+
+【結尾 CTA（22-25 秒）】
+口白（固定）：「點擊下方按鈕填寫表單，免費領取懶人包」
+畫面建議：懶人包封面圖 + 箭頭指向 Meta 廣告按鈕 + 「免費領取」字卡閃動
+
+💡 廣告主文案（Primary Text，3 選 1）：
+1. 我看到一個老闆說「我寧願讓員工去玩，自己留下來收股息」，他用的就是巴菲特給孩子的 5 個 ETF 方法，我整理好了，免費分享給你——填寫下方表單馬上領取👇
+2. 我也常常想，為什麼別人可以「不用上班也有現金流」？這個故事讓我明白——是方法，不是運氣。整理成懶人包了，要不要一起學？
+3. 我之前以為要很有錢才能領股息，後來才發現用對方法、從幾股 ETF 開始就行。整理成免費懶人包了，分享給你。
+
+📰 廣告標題（Headline，3 選 1）：
+1. 老闆讓員工去玩自己收股息的方法
+2. 我整理了這 5 個 ETF，免費給你
+3. 一起學長期領息，我把方法整理好了
+
+🔘 CTA 按鈕：免費下載
+#️⃣ 自然觸及備用 Hashtag：#投資理財 #小資 #ETF入門`
+  }
+];
+
+const scoreColors = {5:'score5',4:'score4',3:'score3',2:'score2',1:'score1'};
+const scoreEmoji = {5:'🟢',4:'🟡',3:'🟠',2:'🔴',1:'⛔'};
+const groupColors = {G1:'g1',G2:'g2',G3:'g3',G4:'g4',G5:'g5',G6:'g6',G7:'g7'};
+
+function fmt(n) { if(!n) return '-'; if(n>=10000) return (n/10000).toFixed(1)+'萬'; return n.toLocaleString(); }
+
+function renderCards(items) {
+  const c = document.getElementById('cards-container');
+  c.innerHTML = '';
+  items.forEach(p => {
+    const div = document.createElement('div');
+    div.className = `card ${scoreColors[p.imitate_score]||''}`;
+    div.dataset.group = p.group;
+    div.innerHTML = `
+      <div class="card-header">
+        <div class="avatar">${p.author[0].toUpperCase()}</div>
+        <div class="author-info">
+          <div class="author-name">
+            @${p.author}
+            ${p.verified ? '<span class="verified">✓ 已驗證</span>' : ''}
+          </div>
+          <div class="author-meta">${p.date} · ${p.group} ${p.group_name}</div>
+        </div>
+        <div class="likes-big">❤️ ${fmt(p.likes)}</div>
+      </div>
+      <div class="hook">${p.hook}</div>
+      <div class="summary">${p.summary}</div>
+      <div class="tags">
+        <span class="tag tag-group ${groupColors[p.group]||''}">${p.group} ${p.group_name}</span>
+        <span class="tag tag-hook">🎣 ${p.hook_type}</span>
+        ${p.is_new ? '<span class="tag tag-new">🆕 今日新增</span>' : ''}
+        ${p.is_rising ? `<span class="tag tag-rising">📈 +${p.delta_pct}%</span>` : ''}
+        ${p.has_pack ? '<span class="tag tag-pack">📦 有懶人包CTA</span>' : ''}
+        ${p.has_video ? '<span class="tag tag-video">🎥 有影片</span>' : ''}
+      </div>
+      <div class="metrics">
+        <div class="metric"><span class="metric-icon">❤️</span><span class="metric-val">${fmt(p.likes)}</span><span class="metric-label">讚</span></div>
+        ${p.comments ? `<div class="metric"><span class="metric-icon">💬</span><span class="metric-val">${fmt(p.comments)}</span><span class="metric-label">留言</span></div>` : ''}
+        ${p.shares ? `<div class="metric"><span class="metric-icon">🔗</span><span class="metric-val">${fmt(p.shares)}</span><span class="metric-label">分享</span></div>` : ''}
+      </div>
+      <div class="score-row">
+        <div class="score-badge" style="background:${['','#7f1d1d','#7c2d12','#78350f','#365314','#14532d'][p.imitate_score]};color:${['','#fca5a5','#fdba74','#fde047','#86efac','#4ade80'][p.imitate_score]}">${p.imitate_score}</div>
+        <div class="score-note">${scoreEmoji[p.imitate_score]} 模仿分 · ${p.imitate_note}</div>
+      </div>
+      <div class="card-footer">
+        <a class="view-link" href="https://www.threads.com${p.url}" target="_blank">→ 查看原帖</a>
+        <span style="font-size:0.72rem;color:var(--text-muted)">${p.id}</span>
+      </div>`;
+    c.appendChild(div);
+  });
+}
+
+function renderScripts() {
+  const c = document.getElementById('scripts-container');
+  SCRIPTS.forEach(s => {
+    const d = document.createElement('div');
+    d.className = 'script-card';
+    d.innerHTML = `<h3>🎬 腳本 ${s.n}｜原貼文：@${s.author} · ${s.likes}讚</h3>
+      <div class="script-meta">
+        <span class="script-badge sb-pack">🎁 ${s.pack}</span>
+        <span class="script-badge sb-dur">⏱️ ${s.duration}</span>
+        ${s.hookStyle ? `<span class="script-badge" style="background:#1a1a2e;color:#e879f9;border:1px solid #7e22ce">${s.hookStyle}</span>` : ''}
+        <span class="script-badge sb-reason">💡 ${s.reason}</span>
+      </div>
+      <div class="script-body">${s.script}</div>
+      <div style="margin-top:8px;font-size:0.72rem;color:#666">原貼文：<a href="${s.url}" target="_blank" style="color:#a78bfa">${s.url}</a></div>`;
+    c.appendChild(d);
+  });
+}
+
+let currentGroup = 'all', currentSort = 'likes', currentDays = 17, currentLikes = 1000;
+
+function daysSince(dateStr) {
+  const snap = new Date(DATA.snapshot_date);
+  const post = new Date(dateStr);
+  return Math.floor((snap - post) / 86400000);
+}
+
+function applyFilter() {
+  let items = [...DATA.candidates];
+  if(currentGroup !== 'all') items = items.filter(p => p.group === currentGroup);
+  items = items.filter(p => p.likes >= currentLikes);
+  items = items.filter(p => daysSince(p.date) <= currentDays);
+  if(currentSort === 'likes') items.sort((a,b) => b.likes - a.likes);
+  else if(currentSort === 'score') items.sort((a,b) => b.imitate_score - a.imitate_score);
+  else if(currentSort === 'date') items.sort((a,b) => b.date.localeCompare(a.date));
+  renderCards(items);
+  document.getElementById('stat-total').textContent = items.length;
+  document.getElementById('stat-hot').textContent = items.filter(p=>p.likes>=1800).length;
+  document.getElementById('stat-score5').textContent = items.filter(p=>p.imitate_score===5).length;
+}
+
+function toggleAbout() {
+  const panel = document.getElementById('about-panel');
+  const arrow = document.getElementById('about-arrow');
+  const open = panel.classList.toggle('open');
+  arrow.textContent = open ? '▲ 收起' : '▼ 展開';
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentGroup = btn.dataset.group;
+    applyFilter();
+  });
+});
+document.querySelectorAll('.sort-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    applyFilter();
+  });
+});
+
+const slider = document.getElementById('likes-slider');
+const likesVal = document.getElementById('likes-val');
+slider.addEventListener('input', () => {
+  currentLikes = parseInt(slider.value);
+  likesVal.textContent = currentLikes.toLocaleString();
+  applyFilter();
+});
+
+document.querySelectorAll('#date-btns button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#date-btns button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentDays = parseInt(btn.dataset.days);
+    applyFilter();
+  });
+});
+
+applyFilter();
+renderScripts();
+</script>
+</body>
+</html>
