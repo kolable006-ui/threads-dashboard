@@ -344,16 +344,57 @@ function renderCards(items) {
 
 function renderScripts() {
   const c = document.getElementById('scripts-container');
+
+  // Summary table at top
+  const summary = document.createElement('div');
+  summary.className = 'script-card';
+  summary.style.borderLeft = '3px solid #fbbf24';
+  let rows = SCRIPTS.map(s => {
+    const firstLine = (s.script.match(/(?:【口白逐字稿】\s*\n*)([^\n]+)/) || ['',''])[1].trim() || '—';
+    return `<tr>
+      <td style="padding:6px 8px;color:#fbbf24;font-weight:600;">#${s.n}</td>
+      <td style="padding:6px 8px;color:#a78bfa;">${s.hookType || s.hookStyle || '—'}</td>
+      <td style="padding:6px 8px;color:#cdd9e5;font-family:monospace;font-size:0.78rem;">${s.hookFormula || '—'}</td>
+      <td style="padding:6px 8px;color:#22d3ee;">${firstLine}</td>
+      <td style="padding:6px 8px;color:#86efac;font-size:0.78rem;">${s.pack}</td>
+    </tr>`;
+  }).join('');
+  summary.innerHTML = `<h3 style="color:#fbbf24;">📊 今日鉤子組合一覽（${SCRIPTS.length} 支腳本）</h3>
+    <div style="overflow-x:auto;margin-top:8px;">
+      <table style="width:100%;border-collapse:collapse;font-size:0.8rem;">
+        <thead><tr style="border-bottom:1px solid #30363d;">
+          <th style="padding:6px 8px;text-align:left;color:var(--text-muted);font-weight:600;">#</th>
+          <th style="padding:6px 8px;text-align:left;color:var(--text-muted);font-weight:600;">鉤子類型</th>
+          <th style="padding:6px 8px;text-align:left;color:var(--text-muted);font-weight:600;">套用模板</th>
+          <th style="padding:6px 8px;text-align:left;color:var(--text-muted);font-weight:600;">改寫後第一句</th>
+          <th style="padding:6px 8px;text-align:left;color:var(--text-muted);font-weight:600;">對應懶人包</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  c.appendChild(summary);
+
+  // Full script cards
   SCRIPTS.forEach(s => {
     const d = document.createElement('div');
     d.className = 'script-card';
+    const firstLine = (s.script.match(/(?:【口白逐字稿】\s*\n*)([^\n]+)/) || ['',''])[1].trim();
+    const charCount = firstLine.replace(/[，。！？、—\s]/g,'').length;
     d.innerHTML = `<h3>🎬 腳本 ${s.n}｜原貼文：@${s.author} · ${s.likes}讚</h3>
       <div class="script-meta">
         <span class="script-badge sb-pack">🎁 ${s.pack}</span>
         <span class="script-badge sb-dur">⏱️ ${s.duration}</span>
-        ${s.hookStyle ? `<span class="script-badge" style="background:#1a1a2e;color:#e879f9;border:1px solid #7e22ce">${s.hookStyle}</span>` : ''}
-        <span class="script-badge sb-reason">💡 ${s.reason}</span>
+        ${s.hookType ? `<span class="script-badge" style="background:#1a1a2e;color:#e879f9;border:1px solid #7e22ce">🎯 ${s.hookType}</span>` : (s.hookStyle ? `<span class="script-badge" style="background:#1a1a2e;color:#e879f9;border:1px solid #7e22ce">${s.hookStyle}</span>` : '')}
+        ${s.reason ? `<span class="script-badge sb-reason">💡 ${s.reason}</span>` : ''}
       </div>
+      ${s.hookFormula ? `<div style="background:#1a1a2e;border-left:3px solid #fbbf24;border-radius:6px;padding:10px 14px;margin:8px 0 4px;font-size:0.85rem;">
+        <div style="color:#a78bfa;font-size:0.72rem;margin-bottom:4px;font-weight:600;">📋 套用模板</div>
+        <div style="color:#fbbf24;font-family:monospace;">「${s.hookFormula}」</div>
+      </div>` : ''}
+      ${firstLine ? `<div style="background:#0a1a14;border-left:3px solid #22d3ee;border-radius:6px;padding:10px 14px;margin:8px 0 10px;font-size:0.9rem;">
+        <div style="color:#22d3ee;font-size:0.72rem;margin-bottom:4px;font-weight:600;">🎤 改寫後第一句（${charCount} 字）</div>
+        <div style="color:#cdd9e5;font-weight:600;">${firstLine}</div>
+      </div>` : ''}
       <div class="script-body">${s.script}</div>
       <div style="margin-top:8px;font-size:0.72rem;color:#666">原貼文：<a href="${s.url}" target="_blank" style="color:#a78bfa">${s.url}</a></div>`;
     c.appendChild(d);
