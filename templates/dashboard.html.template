@@ -473,15 +473,18 @@ function daysSince(dateStr) {
 function applyFilter() {
   let items = [...DATA.candidates];
   if(currentGroup !== 'all') items = items.filter(p => p.group === currentGroup);
-  items = items.filter(p => p.likes >= currentLikes);
+  // 讚數未驗證（未登入抓取，likes=null）的貼文一律保留顯示，標記「僅供觀察」，不被讚數門檻濾掉
+  items = items.filter(p => p.likes == null || p.likes >= currentLikes);
   items = items.filter(p => daysSince(p.date) <= currentDays);
-  if(currentSort === 'likes') items.sort((a,b) => b.likes - a.likes);
+  if(currentSort === 'likes') items.sort((a,b) => (b.likes||0) - (a.likes||0));
   else if(currentSort === 'score') items.sort((a,b) => b.imitate_score - a.imitate_score);
   else if(currentSort === 'date') items.sort((a,b) => b.date.localeCompare(a.date));
   renderCards(items);
   document.getElementById('stat-total').textContent = items.length;
-  document.getElementById('stat-hot').textContent = items.filter(p=>p.likes>=1800).length;
+  document.getElementById('stat-hot').textContent = items.filter(p=>p.likes!=null && p.likes>=1800).length;
   document.getElementById('stat-score5').textContent = items.filter(p=>p.imitate_score===5).length;
+  const mx = Math.max(0, ...items.map(p=>p.likes||0));
+  document.getElementById('stat-top-likes').textContent = mx>0 ? fmt(mx) : '—';
 }
 
 function toggleAbout() {
