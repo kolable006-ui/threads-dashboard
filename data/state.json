@@ -11,6 +11,62 @@
     "CCC333": {
       "likes": null,
       "first_date": "2026-06-22"
+    },
+    "DZ4Yi5oEpOK": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ4edPVoHUY": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ4iavMFBJR": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ3itkYk7hp": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ4gtjWFHyN": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ4gzS7j0Ie": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ4g1uuksWG": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ4ivmbCSR5": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ38fHimKjR": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ4fbBMAUuI": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ4JvtpE_5T": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ36YvFmGkq": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ4hdIZmag3": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    },
+    "DZ3omYPE3dR": {
+      "likes": null,
+      "first_date": "2026-06-22"
     }
   },
   "script_history": [
@@ -25,6 +81,21 @@
         "🤔 好奇型",
         "⚠️ 警示型",
         "🔄 顛覆型"
+      ]
+    },
+    {
+      "date": "2026-06-22",
+      "ids": [
+        "DZ4Yi5oEpOK",
+        "DZ4edPVoHUY",
+        "DZ4iavMFBJR",
+        "DZ3itkYk7hp"
+      ],
+      "categories": [
+        "🪞 代入型",
+        "🔥 萬用開頭",
+        "🤔 好奇型",
+        "⚠️ 警示型"
       ]
     }
   ]
