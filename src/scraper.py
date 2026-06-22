@@ -104,15 +104,32 @@ _PARSE_JS = r"""
 def _apply_cookies(context):
     cookie = os.environ.get("THREADS_COOKIE", "").strip()
     if not cookie:
+        print("[cookie] 未設定 THREADS_COOKIE，以未登入訪客模式抓取（每關鍵字約 4 則、部分讚數隱藏）。")
         return
-    jar = []
+    # 容錯：使用者可能把整行「cookie: a=1; b=2」一起貼進來，去掉開頭的 cookie: 前綴
+    if cookie.lower().startswith("cookie:"):
+        cookie = cookie.split(":", 1)[1].strip()
+    pairs = []
     for part in cookie.split(";"):
+        part = part.strip()
         if "=" not in part:
             continue
-        k, v = part.strip().split("=", 1)
-        jar.append({"name": k, "value": v, "domain": ".threads.com", "path": "/"})
+        k, v = part.split("=", 1)
+        k, v = k.strip(), v.strip()
+        if not k or not v:
+            continue
+        pairs.append((k, v))
+    jar = []
+    # 同時掛到 .threads.com 與 .threads.net，避免網域不符導致整批失效
+    for domain in (".threads.com", ".threads.net"):
+        for k, v in pairs:
+            jar.append({"name": k, "value": v, "domain": domain, "path": "/"})
     if jar:
         context.add_cookies(jar)
+        names = {k for k, _ in pairs}
+        has_session = "sessionid" in names
+        print(f"[cookie] 已載入 {len(pairs)} 個 cookie；sessionid={'有' if has_session else '無'}。"
+              + ("" if has_session else " 注意：沒有 sessionid，Threads 仍會視為未登入！"))
 
 
 def scrape(keywords, scroll_rounds=3, page_wait_ms=3500, headless=True):
