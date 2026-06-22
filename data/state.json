@@ -1,0 +1,31 @@
+{
+  "seen": {
+    "AAA111": {
+      "likes": 2300,
+      "first_date": "2026-06-22"
+    },
+    "BBB222": {
+      "likes": 1500,
+      "first_date": "2026-06-22"
+    },
+    "CCC333": {
+      "likes": null,
+      "first_date": "2026-06-22"
+    }
+  },
+  "script_history": [
+    {
+      "date": "2026-06-22",
+      "ids": [
+        "AAA111",
+        "BBB222",
+        "CCC333"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型"
+      ]
+    }
+  ]
+}
