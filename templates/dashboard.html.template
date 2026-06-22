@@ -209,7 +209,7 @@
 <div class="stats-bar">
   <div class="stat"><div class="stat-num" id="stat-total">28</div><div class="stat-label">候選貼文</div></div>
   <div class="stat"><div class="stat-num" id="stat-hot">23</div><div class="stat-label">今日熱門 (≥1800)</div></div>
-  <div class="stat"><div class="stat-num" id="stat-score5">5</div><div class="stat-label">模仿分數 5⭐</div></div>
+  <div class="stat"><div class="stat-num" id="stat-score5">5</div><div class="stat-label">高潛力 (≥4★)</div></div>
   <div class="stat"><div class="stat-num" id="stat-scripts">4</div><div class="stat-label">廣告腳本</div></div>
   <div class="stat"><div class="stat-num" id="stat-top-likes">1.2萬</div><div class="stat-label">今日最高讚數</div></div>
 </div>
@@ -482,7 +482,7 @@ function applyFilter() {
   renderCards(items);
   document.getElementById('stat-total').textContent = items.length;
   document.getElementById('stat-hot').textContent = items.filter(p=>p.likes!=null && p.likes>=1800).length;
-  document.getElementById('stat-score5').textContent = items.filter(p=>p.imitate_score===5).length;
+  document.getElementById('stat-score5').textContent = items.filter(p=>p.imitate_score>=4).length;
   const mx = Math.max(0, ...items.map(p=>p.likes||0));
   document.getElementById('stat-top-likes').textContent = mx>0 ? fmt(mx) : '—';
 }

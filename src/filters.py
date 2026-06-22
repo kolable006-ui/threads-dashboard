@@ -98,19 +98,28 @@ def clean_content(text, author):
 def score_post(likes, gid):
     """自動模仿分數（1–5）：依讚數量級為主，群組微調。
     讚數未知（未登入）時給保守的 3，再依群組微調。"""
+    # 超高聲量（破 8000 讚）不論群組都值得關注，直接給 5。
+    if likes is not None and likes >= 8000:
+        return 5
     if likes is not None:
         if likes >= 5000:
             base = 5
-        elif likes >= 1500:
+        elif likes >= 2500:
             base = 4
-        else:
+        elif likes >= 1000:
             base = 3
+        else:
+            base = 2
     else:
         base = 3
-    if gid in {"G2", "G3", "G4", "G6", "G7"}:   # 觀念/教學/勵志/新手/節目：改編潛力高
+    # 觀念/教學/勵志/ETF/新手/節目/AI：改編潛力高
+    if gid in {"G2", "G3", "G4", "G5", "G6", "G7", "G8"}:
         base += 1
     elif gid == "G1":                            # 盤後/個股：較不適合直接改編
         base -= 1
+    # 高聲量保底：破 5000 讚至少 4 分，不因群組被壓太低。
+    if likes is not None and likes >= 5000:
+        base = max(base, 4)
     return max(1, min(5, base))
 
 

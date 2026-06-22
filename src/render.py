@@ -53,6 +53,7 @@ def render(template_html, snapshot_date, candidates, scripts, video_hooks):
         cards.append({
             "id": c["id"], "author": c["author"], "verified": c.get("verified", False),
             "date": c["date"], "url": c["url"], "likes": c.get("likes"),
+            "likes_verified": c.get("likes_verified", False),
             "comments": c.get("comments"), "shares": c.get("shares"),
             "has_video": c.get("has_video", False), "hook": c.get("hook", ""),
             "summary": c.get("summary", ""), "group": c.get("group", "G1"),
