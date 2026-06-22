@@ -63,6 +63,25 @@ _PARSE_JS = r"""
       else if (/轉|分享|share|repost/i.test(lbl) && stats.shares == null) stats.shares = n;
     }
 
+    // 主要方法：Threads 貼文頁尾會把「讚/留言/轉發/分享」以一串純數字行呈現。
+    // 取 innerText 結尾連續的純數字行，第一個＝讚數（比按鈕解析可靠很多，未登入也常看得到）。
+    {
+      const rawLines = (node.innerText || '').split('\n').map(s => s.trim()).filter(Boolean);
+      const tail = [];
+      for (let i = rawLines.length - 1; i >= 0 && tail.length < 4; i--) {
+        if (/^[\d.,]+\s*[萬kK]?$/.test(rawLines[i])) {
+          const v = num(rawLines[i]);
+          if (v == null) break;
+          tail.unshift(v);
+        } else break;
+      }
+      if (tail.length) {
+        stats.likes = tail[0];
+        if (tail.length >= 2 && stats.comments == null) stats.comments = tail[1];
+        if (tail.length >= 4 && stats.shares == null) stats.shares = tail[3];
+      }
+    }
+
     // 時間：找 time 元素或日期字串
     let dateStr = null;
     const t = node.querySelector('time');
@@ -71,7 +90,7 @@ _PARSE_JS = r"""
     out.push({
       author, id: pid,
       url: `/@${author}/post/${pid}`,
-      text: text.slice(0, 600),
+      text: text.slice(0, 1200),
       likes: stats.likes, comments: stats.comments, shares: stats.shares,
       has_video: hasVideo,
       date_raw: dateStr,

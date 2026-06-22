@@ -55,6 +55,65 @@ def classify_group(text, groups_cfg):
     return default or ("G1", "盤後評論")
 
 
+# 開頭分類標籤行常見字（用「包含」判斷，可命中「台股投資」「台股 台積電 股市」等）
+_HEADER_TAG_SUBSTR = [
+    "投資理財", "高股息", "台積電", "台股", "美股", "理財", "股市", "ETF",
+    "存股", "選股", "財經", "當沖", "基金", "期貨", "股票", "投資",
+]
+_PUNCT_RE = re.compile(r"[。！？，、,.!?：；…]")
+_TIME_RE = re.compile(r"^\d+\s*(秒|分|分鐘|小時|時|天|週|周|月|年)前?$")
+_NUM_RE = re.compile(r"^[\d.,]+\s*[萬kK]?$")
+
+
+def clean_content(text, author):
+    """去掉貼文開頭的『作者／分類標籤／時間』header，以及結尾的互動數字行，
+    回傳乾淨的內容行（list）。用於產生卡片標題與摘要。"""
+    lines = [l.strip() for l in (text or "").split("\n")]
+    lines = [l for l in lines if l]
+    out = []
+    started = False
+    for l in lines:
+        if not started:
+            if l == author:
+                continue
+            if _TIME_RE.match(l):
+                continue
+            if l == "翻譯":
+                continue
+            if _NUM_RE.match(l):
+                continue
+            # 開頭分類標籤行（如「台股投資」「台股 台積電 股市」）：短、無句子標點、且含已知標籤字才跳過
+            if len(l) <= 10 and not _PUNCT_RE.search(l) and any(s in l for s in _HEADER_TAG_SUBSTR):
+                continue
+            started = True
+        if l == "翻譯":
+            continue
+        out.append(l)
+    # 去掉結尾連續的純數字行（讚/留言/轉/分享）
+    while out and _NUM_RE.match(out[-1]):
+        out.pop()
+    return out
+
+
+def score_post(likes, gid):
+    """自動模仿分數（1–5）：依讚數量級為主，群組微調。
+    讚數未知（未登入）時給保守的 3，再依群組微調。"""
+    if likes is not None:
+        if likes >= 5000:
+            base = 5
+        elif likes >= 1500:
+            base = 4
+        else:
+            base = 3
+    else:
+        base = 3
+    if gid in {"G2", "G3", "G4", "G6", "G7"}:   # 觀念/教學/勵志/新手/節目：改編潛力高
+        base += 1
+    elif gid == "G1":                            # 盤後/個股：較不適合直接改編
+        base -= 1
+    return max(1, min(5, base))
+
+
 def apply_filters(raw_items, cfg, today):
     """套用 zh / 讚數 / 日期 / 排除規則 + 分群。回傳乾淨 candidate list。"""
     out = []
@@ -79,8 +138,9 @@ def apply_filters(raw_items, cfg, today):
         if likes_verified and likes < cfg["min_likes"]:
             continue
         gid, gname = classify_group(text, cfg["groups"])
-        hook = text.split("\n")[0][:60]
-        summary = text[:140]
+        content = clean_content(text, it["author"])
+        hook = (content[0] if content else text.split("\n")[0])[:60]
+        summary = "\n".join(content)[:140] if content else text[:140]
         out.append({
             "id": it["id"],
             "author": it["author"],
@@ -97,8 +157,8 @@ def apply_filters(raw_items, cfg, today):
             "group": gid,
             "group_name": gname,
             "hook_type": "自動擷取",
-            "imitate_score": 3,
-            "imitate_note": "（自動擷取，請人工覆核改編潛力）",
+            "imitate_score": score_post(likes, gid),
+            "imitate_note": "（自動評分，請人工覆核改編潛力）",
             "keyword": it.get("keyword"),
         })
     # 依讚數排序（未知排後面）
