@@ -74,22 +74,28 @@ def build_frameworks(candidates, cfg, recent_used_ids=None, recent_categories=No
 
     hooks = pick_diverse(len(chosen), used_categories=recent_categories)
 
-    # 懶人包多樣化：本批 4 支盡量用「不同」的懶人包，並依當批內容輪替起點，
-    # 避免每次都從同一份開始（之前 bug：4 支都撞同一份 ETF 懶人包）。
+    # 懶人包多樣化 + 主推優先：本批盡量用「不同」的懶人包，並優先多搭配
+    # cfg.priority_packs（主推那幾份），只留第 1 支給當天最相關的那份。
+    # 依當批內容輪替起點，避免每次都從同一份開始。
     seed_src = chosen[0]["id"] if chosen else "x"
     seed = int(hashlib.md5(seed_src.encode()).hexdigest(), 16)
     rot = (packs[seed % len(packs):] + packs[:seed % len(packs)]) if packs else []
+    priority = [p for p in cfg.get("priority_packs", []) if (not packs or p in packs)]
     used_packs = set()
 
     out = []
     for i, c in enumerate(chosen):
         cat, tmpl = hooks[i]
         primary = suggest_pack(c.get("hook", "") + c.get("summary", ""), pack_hints, packs)
-        if primary and primary not in used_packs:
+        if i == 0 and primary and primary not in used_packs:
+            # 第 1 支：用跟當天最熱貼文最相關的懶人包，保留相關性。
             pack = primary
-        else:  # 撞包了 → 從輪替清單挑一個還沒用過的
-            pack = next((p for p in rot if p not in used_packs),
-                        primary or (packs[0] if packs else ""))
+        else:
+            # 其餘：優先補還沒用到的「主推」懶人包，再退而求其次用輪替清單／primary。
+            pack = (next((p for p in priority if p not in used_packs), None)
+                    or next((p for p in rot if p not in used_packs), None)
+                    or (primary if primary and primary not in used_packs else None)
+                    or (packs[0] if packs else ""))
         used_packs.add(pack)
         first_line = draft_first_line(tmpl, pack)
         likes_disp = "-" if c["likes"] is None else f"{c['likes']:,}"
