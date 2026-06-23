@@ -350,7 +350,7 @@ function renderScripts() {
   summary.className = 'script-card';
   summary.style.borderLeft = '3px solid #fbbf24';
   let rows = SCRIPTS.map(s => {
-    const firstLine = (s.script.match(/(?:【口白逐字稿】\s*\n*)([^\n]+)/) || ['',''])[1].trim() || '—';
+    const firstLine = (s.firstLine || '').trim() || '—';
     return `<tr>
       <td style="padding:6px 8px;color:#fbbf24;font-weight:600;">#${s.n}</td>
       <td style="padding:6px 8px;color:#a78bfa;">${s.hookType || s.hookStyle || '—'}</td>
@@ -366,7 +366,7 @@ function renderScripts() {
           <th style="padding:6px 8px;text-align:left;color:var(--text-muted);font-weight:600;">#</th>
           <th style="padding:6px 8px;text-align:left;color:var(--text-muted);font-weight:600;">鉤子類型</th>
           <th style="padding:6px 8px;text-align:left;color:var(--text-muted);font-weight:600;">套用模板</th>
-          <th style="padding:6px 8px;text-align:left;color:var(--text-muted);font-weight:600;">改寫後第一句</th>
+          <th style="padding:6px 8px;text-align:left;color:var(--text-muted);font-weight:600;">改寫後第一句（草稿）</th>
           <th style="padding:6px 8px;text-align:left;color:var(--text-muted);font-weight:600;">對應懶人包</th>
         </tr></thead>
         <tbody>${rows}</tbody>
@@ -378,7 +378,7 @@ function renderScripts() {
   SCRIPTS.forEach(s => {
     const d = document.createElement('div');
     d.className = 'script-card';
-    const firstLine = (s.script.match(/(?:【口白逐字稿】\s*\n*)([^\n]+)/) || ['',''])[1].trim();
+    const firstLine = (s.firstLine || '').trim();
     const charCount = firstLine.replace(/[，。！？、—\s]/g,'').length;
     d.innerHTML = `<h3>🎬 腳本 ${s.n}｜原貼文：@${s.author} · ${s.likes}讚</h3>
       <div class="script-meta">
@@ -392,7 +392,7 @@ function renderScripts() {
         <div style="color:#fbbf24;font-family:monospace;">「${s.hookFormula}」</div>
       </div>` : ''}
       ${firstLine ? `<div style="background:#0a1a14;border-left:3px solid #22d3ee;border-radius:6px;padding:10px 14px;margin:8px 0 10px;font-size:0.9rem;">
-        <div style="color:#22d3ee;font-size:0.72rem;margin-bottom:4px;font-weight:600;">🎤 改寫後第一句（${charCount} 字）</div>
+        <div style="color:#22d3ee;font-size:0.72rem;margin-bottom:4px;font-weight:600;">🎤 改寫後第一句（草稿·${charCount} 字，請微調）</div>
         <div style="color:#cdd9e5;font-weight:600;">${firstLine}</div>
       </div>` : ''}
       <div class="script-body">${s.script}</div>
