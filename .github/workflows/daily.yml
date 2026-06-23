@@ -1,9 +1,12 @@
 name: Daily Threads Dashboard
 
-# 每天台灣時間 12:00（UTC 04:00）跑一次；也可手動觸發。
+# 每天台灣時間中午前後跑。GitHub 排程是「盡力而為、不保證」，
+# 整點容易被跳過，所以錯開分鐘並設兩個時段：主要 + 備援。
+# 只要其中一次有跑到就會更新；若內容沒變，下方步驟會自動 skip 不重複 commit。
 on:
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "17 4 * * *"    # 台灣 12:17 主要時段
+    - cron: "17 7 * * *"    # 台灣 15:17 備援，前一次被 GitHub 跳過時補跑
   workflow_dispatch: {}
 
 # 用內建 GITHUB_TOKEN 寫回 repo，不需要 PAT。
