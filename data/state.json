@@ -109,7 +109,7 @@
       "first_date": "2026-06-22"
     },
     "DZwGlRfCHAH": {
-      "likes": 10000,
+      "likes": 12000,
       "first_date": "2026-06-22"
     },
     "DZ33xnpkuAF": {
@@ -117,11 +117,11 @@
       "first_date": "2026-06-22"
     },
     "DZzcWbAmtfB": {
-      "likes": 3584,
+      "likes": 3585,
       "first_date": "2026-06-22"
     },
     "DZ3vE7xE31m": {
-      "likes": 4135,
+      "likes": 4137,
       "first_date": "2026-06-22"
     },
     "DZ3qJSxEh5X": {
@@ -169,11 +169,11 @@
       "first_date": "2026-06-23"
     },
     "DZ6NDJpmDbb": {
-      "likes": 4247,
+      "likes": 4537,
       "first_date": "2026-06-23"
     },
     "DZ5FaZDk1M8": {
-      "likes": 3222,
+      "likes": 3984,
       "first_date": "2026-06-23"
     },
     "DZofGihkfRC": {
@@ -181,7 +181,7 @@
       "first_date": "2026-06-23"
     },
     "DZ6n1-UiQfF": {
-      "likes": 2570,
+      "likes": 5974,
       "first_date": "2026-06-23"
     },
     "DZ6DRKAkq5B": {
@@ -194,6 +194,34 @@
     },
     "DZ5I9TsiVdB": {
       "likes": 1372,
+      "first_date": "2026-06-23"
+    },
+    "DZ7B8pDEqMj": {
+      "likes": 3664,
+      "first_date": "2026-06-23"
+    },
+    "DZ5579VE7Dj": {
+      "likes": 2714,
+      "first_date": "2026-06-23"
+    },
+    "DZ63G1AGPrI": {
+      "likes": 2488,
+      "first_date": "2026-06-23"
+    },
+    "DZ6zR7hk-_k": {
+      "likes": 1854,
+      "first_date": "2026-06-23"
+    },
+    "DZ7Nz4TiJnt": {
+      "likes": null,
+      "first_date": "2026-06-23"
+    },
+    "DZ6N00DE9Ff": {
+      "likes": null,
+      "first_date": "2026-06-23"
+    },
+    "DZ7LsTSiRLu": {
+      "likes": null,
       "first_date": "2026-06-23"
     }
   },
@@ -263,6 +291,21 @@
         "DZ5NrpYCTC8",
         "DZ41J3xgaRE",
         "DZt_uxNGVLu"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "ids": [
+        "DZ7B8pDEqMj",
+        "DZ6n1-UiQfF",
+        "DZ63G1AGPrI",
+        "DZ6N00DE9Ff"
       ],
       "categories": [
         "🤔 好奇型",
