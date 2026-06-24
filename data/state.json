@@ -117,7 +117,7 @@
       "first_date": "2026-06-22"
     },
     "DZzcWbAmtfB": {
-      "likes": 3584,
+      "likes": 3587,
       "first_date": "2026-06-22"
     },
     "DZ3vE7xE31m": {
@@ -165,7 +165,7 @@
       "first_date": "2026-06-23"
     },
     "DZt_uxNGVLu": {
-      "likes": 5201,
+      "likes": 5202,
       "first_date": "2026-06-23"
     },
     "DZ6NDJpmDbb": {
@@ -213,15 +213,31 @@
       "first_date": "2026-06-24"
     },
     "DZ8s-t7E7S3": {
-      "likes": 1626,
+      "likes": 1732,
       "first_date": "2026-06-24"
     },
     "DZ8r3ihklnd": {
-      "likes": 1438,
+      "likes": 1471,
       "first_date": "2026-06-24"
     },
     "DZ7g-tWCdtf": {
       "likes": 1195,
+      "first_date": "2026-06-24"
+    },
+    "DZ8kMPogZkh": {
+      "likes": 1147,
+      "first_date": "2026-06-24"
+    },
+    "DZ7VOueCkag": {
+      "likes": null,
+      "first_date": "2026-06-24"
+    },
+    "DZ9NU0fk5Hr": {
+      "likes": null,
+      "first_date": "2026-06-24"
+    },
+    "DZ9fvR9nexl": {
+      "likes": null,
       "first_date": "2026-06-24"
     }
   },
@@ -306,6 +322,21 @@
         "DZ8s-t7E7S3",
         "DZ7g-tWCdtf",
         "DZoOWhDDx9N"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "ids": [
+        "DZ8kMPogZkh",
+        "DZzcWbAmtfB",
+        "DZ8r3ihklnd",
+        "DZ7VOueCkag"
       ],
       "categories": [
         "🤔 好奇型",
