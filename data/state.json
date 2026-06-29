@@ -313,7 +313,7 @@
       "first_date": "2026-06-26"
     },
     "DZkbDZIm9ZY": {
-      "likes": 1005,
+      "likes": 1014,
       "first_date": "2026-06-26"
     },
     "DaCkZfLk7lL": {
@@ -409,7 +409,7 @@
       "first_date": "2026-06-28"
     },
     "DaFJoJnEVNy": {
-      "likes": 1808,
+      "likes": 1809,
       "first_date": "2026-06-28"
     },
     "DaHsaSGklA1": {
@@ -461,7 +461,7 @@
       "first_date": "2026-06-29"
     },
     "DaJncBWkwJZ": {
-      "likes": 3556,
+      "likes": 3865,
       "first_date": "2026-06-29"
     },
     "DZoWg-qlAGj": {
@@ -501,6 +501,34 @@
       "first_date": "2026-06-29"
     },
     "DaKbKLoD6XH": {
+      "likes": null,
+      "first_date": "2026-06-29"
+    },
+    "DaI3KbUAWRi": {
+      "likes": 12000,
+      "first_date": "2026-06-29"
+    },
+    "DZnO8x2k8dB": {
+      "likes": 1264,
+      "first_date": "2026-06-29"
+    },
+    "DaJ0r0GEzdN": {
+      "likes": 1210,
+      "first_date": "2026-06-29"
+    },
+    "DaKt7QTEf3O": {
+      "likes": null,
+      "first_date": "2026-06-29"
+    },
+    "DaKFfdpmuZ2": {
+      "likes": null,
+      "first_date": "2026-06-29"
+    },
+    "DaK0-EEG-Tx": {
+      "likes": null,
+      "first_date": "2026-06-29"
+    },
+    "DaKluYIGnrs": {
       "likes": null,
       "first_date": "2026-06-29"
     }
@@ -736,6 +764,21 @@
         "DaKRlfFIIVh",
         "DaJsWFIkxh1",
         "DaKbhhrjzXJ"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "ids": [
+        "DaI3KbUAWRi",
+        "DaKFfdpmuZ2",
+        "DaK0-EEG-Tx",
+        "DaKluYIGnrs"
       ],
       "categories": [
         "🤔 好奇型",
