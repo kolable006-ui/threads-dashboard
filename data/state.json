@@ -409,7 +409,7 @@
       "first_date": "2026-06-28"
     },
     "DaFJoJnEVNy": {
-      "likes": 1814,
+      "likes": 1815,
       "first_date": "2026-06-28"
     },
     "DaHsaSGklA1": {
@@ -541,6 +541,18 @@
       "first_date": "2026-06-30"
     },
     "DaM30H3kkTp": {
+      "likes": null,
+      "first_date": "2026-06-30"
+    },
+    "DaMhtz2mJVx": {
+      "likes": 3247,
+      "first_date": "2026-06-30"
+    },
+    "DaMGBBwkhY7": {
+      "likes": 1340,
+      "first_date": "2026-06-30"
+    },
+    "DaNOhmUk_8C": {
       "likes": null,
       "first_date": "2026-06-30"
     }
@@ -812,6 +824,21 @@
         "🤔 好奇型",
         "⚠️ 警示型",
         "🔄 顛覆型"
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "ids": [
+        "DaNOhmUk_8C",
+        "DaMhtz2mJVx",
+        "DaMGBBwkhY7",
+        "DZ3vE7xE31m"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
       ]
     }
   ]
