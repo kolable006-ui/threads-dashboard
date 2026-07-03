@@ -693,7 +693,7 @@
       "first_date": "2026-07-02"
     },
     "DaRzpFsk286": {
-      "likes": 20000,
+      "likes": 22000,
       "first_date": "2026-07-03"
     },
     "DaS9ELYjlBx": {
@@ -701,15 +701,15 @@
       "first_date": "2026-07-03"
     },
     "DaSu_IRkY9-": {
-      "likes": 7116,
+      "likes": 7149,
       "first_date": "2026-07-03"
     },
     "DaUBX7WE0CG": {
-      "likes": 3786,
+      "likes": 4594,
       "first_date": "2026-07-03"
     },
     "DaRy8wkmB4p": {
-      "likes": 2968,
+      "likes": 2987,
       "first_date": "2026-07-03"
     },
     "DaUOnD1iWg3": {
@@ -721,7 +721,7 @@
       "first_date": "2026-07-03"
     },
     "DaRtzsjmYt8": {
-      "likes": 1311,
+      "likes": 1324,
       "first_date": "2026-07-03"
     },
     "DaUmZboDNQ-": {
@@ -733,6 +733,30 @@
       "first_date": "2026-07-03"
     },
     "DaUnmK6GLjh": {
+      "likes": null,
+      "first_date": "2026-07-03"
+    },
+    "DaUiiy6GbqS": {
+      "likes": 10000,
+      "first_date": "2026-07-03"
+    },
+    "DaSFiEFEUKq": {
+      "likes": 6034,
+      "first_date": "2026-07-03"
+    },
+    "DaUUlB7D5tv": {
+      "likes": 2105,
+      "first_date": "2026-07-03"
+    },
+    "DaUoI35Eyxa": {
+      "likes": null,
+      "first_date": "2026-07-03"
+    },
+    "DaUY-z0kaqs": {
+      "likes": null,
+      "first_date": "2026-07-03"
+    },
+    "DaUR0TKj2c9": {
       "likes": null,
       "first_date": "2026-07-03"
     }
@@ -1088,6 +1112,21 @@
         "DaS9ELYjlBx",
         "DaRy8wkmB4p",
         "DaSu_IRkY9-"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "ids": [
+        "DaUiiy6GbqS",
+        "DZ41J3xgaRE",
+        "DaSFiEFEUKq",
+        "DaUY-z0kaqs"
       ],
       "categories": [
         "🤔 好奇型",
