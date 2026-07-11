@@ -1043,24 +1043,65 @@
     "Dam2Djtk3OW": {
       "likes": null,
       "first_date": "2026-07-10"
+    },
+    "DamQ0HhAb-v": {
+      "likes": 7949,
+      "first_date": "2026-07-11"
+    },
+    "DamWHrckTly": {
+      "likes": 5648,
+      "first_date": "2026-07-11"
+    },
+    "DanJD60gJAG": {
+      "likes": 1230,
+      "first_date": "2026-07-11"
+    },
+    "Daoexgnk-j7": {
+      "likes": null,
+      "first_date": "2026-07-11"
+    },
+    "Dao6Kqikl2W": {
+      "likes": null,
+      "first_date": "2026-07-11"
+    },
+    "DanaYG4FPI5": {
+      "likes": null,
+      "first_date": "2026-07-11"
+    },
+    "DapGYeqnc5x": {
+      "likes": null,
+      "first_date": "2026-07-11"
+    },
+    "DaoytNcoNDK": {
+      "likes": null,
+      "first_date": "2026-07-11"
+    },
+    "DaoytP4IODb": {
+      "likes": null,
+      "first_date": "2026-07-11"
+    },
+    "Dao3OinGWPr": {
+      "likes": null,
+      "first_date": "2026-07-11"
+    },
+    "Dao3Og9GRvM": {
+      "likes": null,
+      "first_date": "2026-07-11"
+    },
+    "Daov4nWE76x": {
+      "likes": null,
+      "first_date": "2026-07-11"
+    },
+    "Daov4mQk8OM": {
+      "likes": null,
+      "first_date": "2026-07-11"
+    },
+    "DaoS056EgX7": {
+      "likes": null,
+      "first_date": "2026-07-11"
     }
   },
   "script_history": [
-    {
-      "date": "2026-06-26",
-      "ids": [
-        "DaBsr5qEj4h",
-        "DaC4Ep2kVre",
-        "DaCy-13k5cd",
-        "DaCSyZsGLnD"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-06-27",
       "ids": [
@@ -1488,6 +1529,21 @@
         "Dalxn06Elkk",
         "Dam2ZYEEfAk",
         "Dak3GE8kyf0"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "ids": [
+        "DamQ0HhAb-v",
+        "DamWHrckTly",
+        "Dao6Kqikl2W",
+        "DapGYeqnc5x"
       ],
       "categories": [
         "🤔 好奇型",
