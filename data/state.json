@@ -621,7 +621,7 @@
       "first_date": "2026-07-02"
     },
     "DaP0_FgCVj9": {
-      "likes": 1892,
+      "likes": 1893,
       "first_date": "2026-07-02"
     },
     "DaQQre6kun9": {
@@ -1121,7 +1121,7 @@
       "first_date": "2026-07-11"
     },
     "DapQCkOkcti": {
-      "likes": 2086,
+      "likes": 2151,
       "first_date": "2026-07-12"
     },
     "DaruY1qn1z8": {
@@ -1147,24 +1147,25 @@
     "DarsVWjCZk_": {
       "likes": null,
       "first_date": "2026-07-12"
+    },
+    "DamaQh_EYsP": {
+      "likes": 3626,
+      "first_date": "2026-07-12"
+    },
+    "Dak7qmnmmNz": {
+      "likes": 2537,
+      "first_date": "2026-07-12"
+    },
+    "DaplLM2kZTQ": {
+      "likes": 1888,
+      "first_date": "2026-07-12"
+    },
+    "Dar_1Gmkxx_": {
+      "likes": null,
+      "first_date": "2026-07-12"
     }
   },
   "script_history": [
-    {
-      "date": "2026-06-28",
-      "ids": [
-        "DaFJoJnEVNy",
-        "DaHsaSGklA1",
-        "DaHiQYyFO0k",
-        "DaHxpu9ifjF"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-06-28",
       "ids": [
@@ -1592,6 +1593,21 @@
         "DarndEqlArg",
         "Darumu_Gr8p",
         "DapQCkOkcti"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "ids": [
+        "DamaQh_EYsP",
+        "DaP0_FgCVj9",
+        "Dar_1Gmkxx_",
+        "Dak7qmnmmNz"
       ],
       "categories": [
         "🤔 好奇型",
