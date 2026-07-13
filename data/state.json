@@ -717,7 +717,7 @@
       "first_date": "2026-07-03"
     },
     "DaUG7uMEt3F": {
-      "likes": 2486,
+      "likes": 2527,
       "first_date": "2026-07-03"
     },
     "DaRtzsjmYt8": {
@@ -1165,15 +1165,15 @@
       "first_date": "2026-07-12"
     },
     "DauGsXnk0HG": {
-      "likes": 1662,
+      "likes": 2187,
       "first_date": "2026-07-13"
     },
     "DauEqHUiZrJ": {
-      "likes": 1271,
+      "likes": 2187,
       "first_date": "2026-07-13"
     },
     "DatzBbPEtIt": {
-      "likes": 1184,
+      "likes": 1532,
       "first_date": "2026-07-13"
     },
     "DauHMQ0kjOG": {
@@ -1207,24 +1207,33 @@
     "Dat5_hoisoR": {
       "likes": null,
       "first_date": "2026-07-13"
+    },
+    "DatDmtxkiWq": {
+      "likes": 6130,
+      "first_date": "2026-07-13"
+    },
+    "DauthA2ifiA": {
+      "likes": null,
+      "first_date": "2026-07-13"
+    },
+    "Dautgfwj2jv": {
+      "likes": null,
+      "first_date": "2026-07-13"
+    },
+    "DausjiAD0pc": {
+      "likes": null,
+      "first_date": "2026-07-13"
+    },
+    "DautpvZlDNS": {
+      "likes": null,
+      "first_date": "2026-07-13"
+    },
+    "DautwblEa4U": {
+      "likes": null,
+      "first_date": "2026-07-13"
     }
   },
   "script_history": [
-    {
-      "date": "2026-06-29",
-      "ids": [
-        "DaIuwhfGA4i",
-        "DaKRlfFIIVh",
-        "DaJsWFIkxh1",
-        "DaKbhhrjzXJ"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-06-29",
       "ids": [
@@ -1652,6 +1661,21 @@
         "DauIWNaCe4D",
         "Dat9SM8ATDr",
         "DasUxtTE68x"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "ids": [
+        "DatDmtxkiWq",
+        "DasXz_lm3JX",
+        "DaUG7uMEt3F",
+        "DauEqHUiZrJ"
       ],
       "categories": [
         "🤔 好奇型",
