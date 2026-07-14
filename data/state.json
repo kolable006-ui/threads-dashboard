@@ -1231,24 +1231,21 @@
     "DautwblEa4U": {
       "likes": null,
       "first_date": "2026-07-13"
+    },
+    "Daw0uDKHUCb": {
+      "likes": null,
+      "first_date": "2026-07-14"
+    },
+    "Daw1Tm0mVLR": {
+      "likes": null,
+      "first_date": "2026-07-14"
+    },
+    "DaweGa6lEQO": {
+      "likes": null,
+      "first_date": "2026-07-14"
     }
   },
   "script_history": [
-    {
-      "date": "2026-06-29",
-      "ids": [
-        "DaI3KbUAWRi",
-        "DaKFfdpmuZ2",
-        "DaK0-EEG-Tx",
-        "DaKluYIGnrs"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-06-30",
       "ids": [
@@ -1682,6 +1679,19 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "ids": [
+        "Daw0uDKHUCb",
+        "Daw1Tm0mVLR",
+        "DaweGa6lEQO"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型"
       ]
     }
   ]
