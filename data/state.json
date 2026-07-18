@@ -1165,7 +1165,7 @@
       "first_date": "2026-07-12"
     },
     "DauGsXnk0HG": {
-      "likes": 2939,
+      "likes": 3011,
       "first_date": "2026-07-13"
     },
     "DauEqHUiZrJ": {
@@ -1391,24 +1391,57 @@
     "Da44J3bEoTS": {
       "likes": null,
       "first_date": "2026-07-17"
+    },
+    "Da416tFEUlP": {
+      "likes": 56000,
+      "first_date": "2026-07-18"
+    },
+    "Da2tPKhk1Fm": {
+      "likes": 53000,
+      "first_date": "2026-07-18"
+    },
+    "Da4_Ne7ExJ4": {
+      "likes": 7328,
+      "first_date": "2026-07-18"
+    },
+    "Da5O-xmEiqK": {
+      "likes": 2904,
+      "first_date": "2026-07-18"
+    },
+    "Da5o2FxkkGv": {
+      "likes": 1120,
+      "first_date": "2026-07-18"
+    },
+    "Da5djX3k-JH": {
+      "likes": 1090,
+      "first_date": "2026-07-18"
+    },
+    "Da7HWj7E_bT": {
+      "likes": null,
+      "first_date": "2026-07-18"
+    },
+    "Da66_k2kjVp": {
+      "likes": null,
+      "first_date": "2026-07-18"
+    },
+    "Da6mEUZiRv1": {
+      "likes": null,
+      "first_date": "2026-07-18"
+    },
+    "Da53bx2k02y": {
+      "likes": null,
+      "first_date": "2026-07-18"
+    },
+    "Da63hdpkR4g": {
+      "likes": null,
+      "first_date": "2026-07-18"
+    },
+    "Da6onZVk7DR": {
+      "likes": null,
+      "first_date": "2026-07-18"
     }
   },
   "script_history": [
-    {
-      "date": "2026-07-03",
-      "ids": [
-        "DaUiiy6GbqS",
-        "DZ41J3xgaRE",
-        "DaSFiEFEUKq",
-        "DaUY-z0kaqs"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-07-04",
       "ids": [
@@ -1814,6 +1847,21 @@
         "Da41-9NDV-Z",
         "Da4kneoES56",
         "Da4eHA2CRhc"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "ids": [
+        "Da416tFEUlP",
+        "Da2tPKhk1Fm",
+        "Da4_Ne7ExJ4",
+        "Da7HWj7E_bT"
       ],
       "categories": [
         "🤔 好奇型",
