@@ -1401,15 +1401,15 @@
       "first_date": "2026-07-18"
     },
     "Da4_Ne7ExJ4": {
-      "likes": 7328,
+      "likes": 8144,
       "first_date": "2026-07-18"
     },
     "Da5O-xmEiqK": {
-      "likes": 2904,
+      "likes": 3800,
       "first_date": "2026-07-18"
     },
     "Da5o2FxkkGv": {
-      "likes": 1120,
+      "likes": 1167,
       "first_date": "2026-07-18"
     },
     "Da5djX3k-JH": {
@@ -1439,24 +1439,33 @@
     "Da6onZVk7DR": {
       "likes": null,
       "first_date": "2026-07-18"
+    },
+    "Da5HNhTibkK": {
+      "likes": 1437,
+      "first_date": "2026-07-18"
+    },
+    "Da7U-lAmYx2": {
+      "likes": null,
+      "first_date": "2026-07-18"
+    },
+    "Da7aoAIklTg": {
+      "likes": null,
+      "first_date": "2026-07-18"
+    },
+    "Da7Y5OoEggk": {
+      "likes": null,
+      "first_date": "2026-07-18"
+    },
+    "Da64guvEw-b": {
+      "likes": null,
+      "first_date": "2026-07-18"
+    },
+    "Da6Uv_dE4So": {
+      "likes": null,
+      "first_date": "2026-07-18"
     }
   },
   "script_history": [
-    {
-      "date": "2026-07-04",
-      "ids": [
-        "DaWiVysk5Sa",
-        "DaRtzsjmYt8",
-        "DZwieO7ESgF",
-        "DZ3vE7xE31m"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-07-04",
       "ids": [
@@ -1862,6 +1871,21 @@
         "Da2tPKhk1Fm",
         "Da4_Ne7ExJ4",
         "Da7HWj7E_bT"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "ids": [
+        "Da7U-lAmYx2",
+        "Da64guvEw-b",
+        "Da5O-xmEiqK",
+        "Da5HNhTibkK"
       ],
       "categories": [
         "🤔 好奇型",
