@@ -1469,7 +1469,7 @@
       "first_date": "2026-07-19"
     },
     "Da8NIBQCTZy": {
-      "likes": 3442,
+      "likes": 3453,
       "first_date": "2026-07-19"
     },
     "DaUBSdVkhG9": {
@@ -1505,7 +1505,7 @@
       "first_date": "2026-07-19"
     },
     "Da4skLrkuPQ": {
-      "likes": 5369,
+      "likes": 5396,
       "first_date": "2026-07-19"
     },
     "Da4oy7AAVCO": {
@@ -1581,7 +1581,7 @@
       "first_date": "2026-07-21"
     },
     "Da4Qopmk77s": {
-      "likes": 1020,
+      "likes": 1021,
       "first_date": "2026-07-21"
     },
     "DbCiZRyDfOy": {
@@ -1621,7 +1621,7 @@
       "first_date": "2026-07-21"
     },
     "Da9MzpwkpqR": {
-      "likes": 1157,
+      "likes": 1158,
       "first_date": "2026-07-21"
     },
     "DbDJiNKDz5c": {
@@ -1691,24 +1691,37 @@
     "DbFyT_PgXOp": {
       "likes": null,
       "first_date": "2026-07-22"
+    },
+    "DawzBmDAY0m": {
+      "likes": 15000,
+      "first_date": "2026-07-23"
+    },
+    "Darxv8flPL5": {
+      "likes": 10000,
+      "first_date": "2026-07-23"
+    },
+    "DbFr986G_fD": {
+      "likes": 3892,
+      "first_date": "2026-07-23"
+    },
+    "Dayu91zEzkg": {
+      "likes": 3089,
+      "first_date": "2026-07-23"
+    },
+    "DbDKU0DkW0C": {
+      "likes": 1094,
+      "first_date": "2026-07-23"
+    },
+    "DbH82-ikjT3": {
+      "likes": null,
+      "first_date": "2026-07-23"
+    },
+    "DbIAJN3k9OB": {
+      "likes": null,
+      "first_date": "2026-07-23"
     }
   },
   "script_history": [
-    {
-      "date": "2026-07-08",
-      "ids": [
-        "DahaiesE3Xo",
-        "DahajmIEsOb",
-        "DahZLGAAuUj",
-        "DagyPmak-Hc"
-      ],
-      "categories": [
-        "🔥 萬用開頭",
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型"
-      ]
-    },
     {
       "date": "2026-07-08",
       "ids": [
@@ -2114,6 +2127,21 @@
         "DbFguAJk8ZG",
         "DbFAQvoDCsZ",
         "DbD3cqRk8H-"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "ids": [
+        "DawzBmDAY0m",
+        "Darxv8flPL5",
+        "DbDKU0DkW0C",
+        "DbIAJN3k9OB"
       ],
       "categories": [
         "🤔 好奇型",
