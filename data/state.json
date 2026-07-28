@@ -1793,7 +1793,7 @@
       "first_date": "2026-07-25"
     },
     "DbLY2m2mjre": {
-      "likes": 1994,
+      "likes": 1999,
       "first_date": "2026-07-25"
     },
     "DbCzN9Xk1wE": {
@@ -1863,24 +1863,41 @@
     "DbSto8xCVLj": {
       "likes": null,
       "first_date": "2026-07-27"
+    },
+    "DayY_12kwOS": {
+      "likes": 14000,
+      "first_date": "2026-07-28"
+    },
+    "DbQ7unnGLi-": {
+      "likes": 9917,
+      "first_date": "2026-07-28"
+    },
+    "DbTNdnxEjwm": {
+      "likes": 5191,
+      "first_date": "2026-07-28"
+    },
+    "DbUam7tj2Aw": {
+      "likes": 2273,
+      "first_date": "2026-07-28"
+    },
+    "DbLKegOk4k4": {
+      "likes": 2132,
+      "first_date": "2026-07-28"
+    },
+    "DbUVQ-KE07o": {
+      "likes": 1151,
+      "first_date": "2026-07-28"
+    },
+    "DbUayUXmozn": {
+      "likes": 1124,
+      "first_date": "2026-07-28"
+    },
+    "DbUWh_Pk6bt": {
+      "likes": 1091,
+      "first_date": "2026-07-28"
     }
   },
   "script_history": [
-    {
-      "date": "2026-07-13",
-      "ids": [
-        "DauHMQ0kjOG",
-        "DauIWNaCe4D",
-        "Dat9SM8ATDr",
-        "DasUxtTE68x"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-07-13",
       "ids": [
@@ -2286,6 +2303,21 @@
         "DbSuhQUEZmN",
         "DbSlgFiCdn4",
         "DbCnthfESMT"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "ids": [
+        "DayY_12kwOS",
+        "DbQ7unnGLi-",
+        "DbTNdnxEjwm",
+        "DbUam7tj2Aw"
       ],
       "categories": [
         "🤔 好奇型",
