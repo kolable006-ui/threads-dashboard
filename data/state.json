@@ -1621,7 +1621,7 @@
       "first_date": "2026-07-21"
     },
     "Da9MzpwkpqR": {
-      "likes": 1160,
+      "likes": 1164,
       "first_date": "2026-07-21"
     },
     "DbDJiNKDz5c": {
@@ -1881,7 +1881,7 @@
       "first_date": "2026-07-28"
     },
     "DbLKegOk4k4": {
-      "likes": 2133,
+      "likes": 2136,
       "first_date": "2026-07-28"
     },
     "DbUVQ-KE07o": {
@@ -1915,22 +1915,53 @@
     "DbVLg_zGsl5": {
       "likes": null,
       "first_date": "2026-07-28"
+    },
+    "DavsBdJE37j": {
+      "likes": 7291,
+      "first_date": "2026-07-29"
+    },
+    "DbGq5RSk3MX": {
+      "likes": 7108,
+      "first_date": "2026-07-29"
+    },
+    "DbOH_WVE4Wm": {
+      "likes": 5663,
+      "first_date": "2026-07-29"
+    },
+    "DbXJ9wyk-UO": {
+      "likes": 3920,
+      "first_date": "2026-07-29"
+    },
+    "DbGHHBPDzyt": {
+      "likes": 3312,
+      "first_date": "2026-07-29"
+    },
+    "DbXFMVqkdCk": {
+      "likes": 2721,
+      "first_date": "2026-07-29"
+    },
+    "DbI6HOXiZZg": {
+      "likes": 2620,
+      "first_date": "2026-07-29"
+    },
+    "DbKPs1BkUdo": {
+      "likes": 2250,
+      "first_date": "2026-07-29"
+    },
+    "DbVJfQPj2Ay": {
+      "likes": 2004,
+      "first_date": "2026-07-29"
+    },
+    "DbVmO2BkmaR": {
+      "likes": 1735,
+      "first_date": "2026-07-29"
+    },
+    "DbV9IBBj-4i": {
+      "likes": 1246,
+      "first_date": "2026-07-29"
     }
   },
   "script_history": [
-    {
-      "date": "2026-07-14",
-      "ids": [
-        "Daw0uDKHUCb",
-        "Daw1Tm0mVLR",
-        "DaweGa6lEQO"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型"
-      ]
-    },
     {
       "date": "2026-07-14",
       "ids": [
@@ -2338,6 +2369,21 @@
         "DbVLg_zGsl5",
         "DbLKegOk4k4",
         "DbUVfw9kyP8"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "ids": [
+        "DbGHHBPDzyt",
+        "DavsBdJE37j",
+        "DbGq5RSk3MX",
+        "DbOH_WVE4Wm"
       ],
       "categories": [
         "🤔 好奇型",
