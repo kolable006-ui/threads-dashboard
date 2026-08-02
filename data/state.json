@@ -2109,7 +2109,7 @@
       "first_date": "2026-08-01"
     },
     "Dbe2z1Xk7pq": {
-      "likes": 4513,
+      "likes": 14000,
       "first_date": "2026-08-01"
     },
     "Dbc3me0iaCz": {
@@ -2123,24 +2123,57 @@
     "DbfgQ6QE91L": {
       "likes": null,
       "first_date": "2026-08-01"
+    },
+    "DbfkylBkSjU": {
+      "likes": 7278,
+      "first_date": "2026-08-02"
+    },
+    "Dbe6ByrCSAO": {
+      "likes": 3502,
+      "first_date": "2026-08-02"
+    },
+    "DbW0GyAH9oa": {
+      "likes": 1207,
+      "first_date": "2026-08-02"
+    },
+    "Dbhyz4Xk9dM": {
+      "likes": null,
+      "first_date": "2026-08-02"
+    },
+    "DbhuMwREoJg": {
+      "likes": null,
+      "first_date": "2026-08-02"
+    },
+    "DbgAE3vFLnm": {
+      "likes": null,
+      "first_date": "2026-08-02"
+    },
+    "DbhyBo-kV3w": {
+      "likes": null,
+      "first_date": "2026-08-02"
+    },
+    "DbhVeXqAGz9": {
+      "likes": null,
+      "first_date": "2026-08-02"
+    },
+    "Dbhfb5Xn0SG": {
+      "likes": null,
+      "first_date": "2026-08-02"
+    },
+    "DbhafzIj3wu": {
+      "likes": null,
+      "first_date": "2026-08-02"
+    },
+    "DbgGDIXgcUI": {
+      "likes": null,
+      "first_date": "2026-08-02"
+    },
+    "DbhApdSkg7J": {
+      "likes": null,
+      "first_date": "2026-08-02"
     }
   },
   "script_history": [
-    {
-      "date": "2026-07-18",
-      "ids": [
-        "Da416tFEUlP",
-        "Da2tPKhk1Fm",
-        "Da4_Ne7ExJ4",
-        "Da7HWj7E_bT"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-07-18",
       "ids": [
@@ -2574,6 +2607,21 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-08-02",
+      "ids": [
+        "DbfkylBkSjU",
+        "Dbhyz4Xk9dM",
+        "DbhVeXqAGz9",
+        "Dbe6ByrCSAO"
+      ],
+      "categories": [
+        "🔥 萬用開頭",
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型"
       ]
     }
   ]
