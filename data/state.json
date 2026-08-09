@@ -2317,21 +2317,6 @@
     {
       "date": "2026-07-25",
       "ids": [
-        "Dazcy7iiTIs",
-        "DbNJhhFj6zh",
-        "Da4TFq2Eya1",
-        "Da41J0oke3h"
-      ],
-      "categories": [
-        "🔥 萬用開頭",
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型"
-      ]
-    },
-    {
-      "date": "2026-07-25",
-      "ids": [
         "Da9CwJ8gWzR",
         "DbKAhHXj9BA",
         "DbLY2m2mjre",
@@ -2749,6 +2734,11 @@
       "categories": [
         "🤔 好奇型"
       ]
+    },
+    {
+      "date": "2026-08-09",
+      "ids": [],
+      "categories": []
     }
   ]
 }
