@@ -2021,7 +2021,7 @@
       "first_date": "2026-07-30"
     },
     "DbYZM9eE5xZ": {
-      "likes": 1356,
+      "likes": 1358,
       "first_date": "2026-07-30"
     },
     "DbYt-guAXK0": {
@@ -2322,21 +2322,6 @@
     }
   },
   "script_history": [
-    {
-      "date": "2026-07-26",
-      "ids": [
-        "DbP9_0YkVCb",
-        "Darxv8flPL5",
-        "DamaQh_EYsP",
-        "DbDKU0DkW0C"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-07-27",
       "ids": [
@@ -2738,6 +2723,19 @@
       ],
       "categories": [
         "🔥 萬用開頭"
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "ids": [
+        "DbYZM9eE5xZ",
+        "Dbnh-61FPG1",
+        "Dbp83cTFJCY"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型"
       ]
     }
   ]
