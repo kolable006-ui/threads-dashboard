@@ -2325,21 +2325,6 @@
     {
       "date": "2026-07-26",
       "ids": [
-        "Da-kFDOgSDC",
-        "DbPPRX7Ez9U",
-        "DbPBz4QgbaI",
-        "DbCzN9Xk1wE"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
-    {
-      "date": "2026-07-26",
-      "ids": [
         "DbP9_0YkVCb",
         "Darxv8flPL5",
         "DamaQh_EYsP",
@@ -2744,6 +2729,15 @@
         "🤔 好奇型",
         "⚠️ 警示型",
         "🔄 顛覆型"
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "ids": [
+        "Dbp83cTFJCY"
+      ],
+      "categories": [
+        "🔥 萬用開頭"
       ]
     }
   ]
