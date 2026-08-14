@@ -2375,21 +2375,6 @@
   },
   "script_history": [
     {
-      "date": "2026-07-30",
-      "ids": [
-        "DbR8WVemuAa",
-        "DbZef_FgSt7",
-        "DbZ3S2HEfNq",
-        "Da-F7uQkfRp"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
-    {
       "date": "2026-07-31",
       "ids": [
         "DbHwzdpgW16",
@@ -2767,6 +2752,11 @@
         "🤔 好奇型",
         "⚠️ 警示型"
       ]
+    },
+    {
+      "date": "2026-08-14",
+      "ids": [],
+      "categories": []
     }
   ]
 }
