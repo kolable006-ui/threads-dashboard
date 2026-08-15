@@ -2371,24 +2371,13 @@
     "DcAFRHhkxTp": {
       "likes": 1061,
       "first_date": "2026-08-14"
+    },
+    "Dbsq0Pamjn7": {
+      "likes": 5430,
+      "first_date": "2026-08-15"
     }
   },
   "script_history": [
-    {
-      "date": "2026-07-31",
-      "ids": [
-        "DbHwzdpgW16",
-        "DbXmp6dmuTJ",
-        "DbcLeLZD9Am",
-        "DbXjF_ZGX9z"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-07-31",
       "ids": [
@@ -2757,6 +2746,15 @@
       "date": "2026-08-14",
       "ids": [],
       "categories": []
+    },
+    {
+      "date": "2026-08-15",
+      "ids": [
+        "Dbsq0Pamjn7"
+      ],
+      "categories": [
+        "🤔 好奇型"
+      ]
     }
   ]
 }
