@@ -2421,21 +2421,6 @@
     {
       "date": "2026-08-03",
       "ids": [
-        "DbDKU0DkW0C",
-        "Dbj55kTGbfU",
-        "Dbj5SPuE4g2",
-        "Dbh397xie0c"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
-    {
-      "date": "2026-08-03",
-      "ids": [
         "DbkxrCUkzIq",
         "DbkUaDkE5Zt",
         "DbRkF8mE6n0",
@@ -2788,6 +2773,15 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "ids": [
+        "Db2PfFrmVns"
+      ],
+      "categories": [
+        "🔥 萬用開頭"
       ]
     }
   ]
