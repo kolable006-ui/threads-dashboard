@@ -2415,24 +2415,13 @@
     "DcH-Q-qE68L": {
       "likes": 1512,
       "first_date": "2026-08-17"
+    },
+    "Dbh-aKmkSMV": {
+      "likes": 2479,
+      "first_date": "2026-08-18"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-03",
-      "ids": [
-        "DbkxrCUkzIq",
-        "DbkUaDkE5Zt",
-        "DbRkF8mE6n0",
-        "Da-0V5siTzk"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-08-04",
       "ids": [
@@ -2782,6 +2771,15 @@
       ],
       "categories": [
         "🔥 萬用開頭"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "ids": [
+        "Dbh-aKmkSMV"
+      ],
+      "categories": [
+        "🤔 好奇型"
       ]
     }
   ]
