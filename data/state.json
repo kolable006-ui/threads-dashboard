@@ -2507,18 +2507,17 @@
     "Dccoiasky3U": {
       "likes": 1507,
       "first_date": "2026-08-25"
+    },
+    "Db2sIIOEyTs": {
+      "likes": 2093,
+      "first_date": "2026-08-25"
+    },
+    "DcdKI0FjNcT": {
+      "likes": null,
+      "first_date": "2026-08-25"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-10",
-      "ids": [
-        "Dbp83cTFJCY"
-      ],
-      "categories": [
-        "🔥 萬用開頭"
-      ]
-    },
     {
       "date": "2026-08-10",
       "ids": [
@@ -2870,6 +2869,21 @@
         "🤔 好奇型",
         "⚠️ 警示型",
         "🔄 顛覆型"
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "ids": [
+        "DcdKI0FjNcT",
+        "Db2sIIOEyTs",
+        "DcR_r9gEo9L",
+        "DcF1sDXERDY"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
       ]
     }
   ]
