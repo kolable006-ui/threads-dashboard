@@ -2473,7 +2473,7 @@
       "first_date": "2026-08-21"
     },
     "DcR_r9gEo9L": {
-      "likes": 1992,
+      "likes": 1995,
       "first_date": "2026-08-22"
     },
     "DcVAb6WAmjZ": {
@@ -2527,24 +2527,25 @@
     "Dcd-6kKkv0f": {
       "likes": 1465,
       "first_date": "2026-08-26"
+    },
+    "Dchf_qIj7eX": {
+      "likes": 6680,
+      "first_date": "2026-08-27"
+    },
+    "DcVTRHnAoKW": {
+      "likes": 2183,
+      "first_date": "2026-08-27"
+    },
+    "DchcGSMAapD": {
+      "likes": 1525,
+      "first_date": "2026-08-27"
+    },
+    "DcfPEu4kSkp": {
+      "likes": 1045,
+      "first_date": "2026-08-27"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-11",
-      "ids": [
-        "Db3JJzQErCN",
-        "Db5Fx-1mvie",
-        "Db5GVf2lr_A",
-        "Db2MPuQCQQH"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-08-12",
       "ids": [
@@ -2888,6 +2889,21 @@
         "DcfCMT0Hczg",
         "Dcd-6kKkv0f",
         "DcF1sDXERDY"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "ids": [
+        "Dchf_qIj7eX",
+        "DcVTRHnAoKW",
+        "DchcGSMAapD",
+        "DcfPEu4kSkp"
       ],
       "categories": [
         "🤔 好奇型",
