@@ -2555,18 +2555,13 @@
     "DckZ3J_GCQm": {
       "likes": null,
       "first_date": "2026-08-28"
+    },
+    "DckKLhlEwfj": {
+      "likes": 2004,
+      "first_date": "2026-08-28"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-13",
-      "ids": [
-        "Db8UcT-k7aW"
-      ],
-      "categories": [
-        "🤔 好奇型"
-      ]
-    },
     {
       "date": "2026-08-13",
       "ids": [],
@@ -2914,6 +2909,17 @@
       "ids": [
         "DckZ3J_GCQm",
         "DclMGxMgRx6"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型"
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "ids": [
+        "DckKLhlEwfj",
+        "DcPxEElkc_y"
       ],
       "categories": [
         "🤔 好奇型",
