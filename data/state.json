@@ -2559,14 +2559,17 @@
     "DckKLhlEwfj": {
       "likes": 2004,
       "first_date": "2026-08-28"
+    },
+    "DcSQblAkxK_": {
+      "likes": 4307,
+      "first_date": "2026-08-29"
+    },
+    "DcnxhfHjzJN": {
+      "likes": null,
+      "first_date": "2026-08-29"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-13",
-      "ids": [],
-      "categories": []
-    },
     {
       "date": "2026-08-14",
       "ids": [
@@ -2920,6 +2923,17 @@
       "ids": [
         "DckKLhlEwfj",
         "DcPxEElkc_y"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型"
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "ids": [
+        "DcSQblAkxK_",
+        "DcnxhfHjzJN"
       ],
       "categories": [
         "🤔 好奇型",
