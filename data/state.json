@@ -2577,7 +2577,7 @@
       "first_date": "2026-08-30"
     },
     "DcnYf-Dj_QG": {
-      "likes": 1061,
+      "likes": 1288,
       "first_date": "2026-08-30"
     },
     "Dcsnr5gGbfX": {
@@ -2607,18 +2607,13 @@
     "DcxbMQKIGWQ": {
       "likes": 1499,
       "first_date": "2026-09-02"
+    },
+    "Dc0alFbAWWx": {
+      "likes": null,
+      "first_date": "2026-09-03"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-18",
-      "ids": [
-        "Dbh-aKmkSMV"
-      ],
-      "categories": [
-        "🤔 好奇型"
-      ]
-    },
     {
       "date": "2026-08-19",
       "ids": [
@@ -2980,6 +2975,17 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "ids": [
+        "Dc0alFbAWWx",
+        "DcnYf-Dj_QG"
+      ],
+      "categories": [
+        "🔥 萬用開頭",
+        "🤔 好奇型"
       ]
     }
   ]
