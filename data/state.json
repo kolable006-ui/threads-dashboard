@@ -2633,21 +2633,6 @@
     {
       "date": "2026-08-21",
       "ids": [
-        "DcGAyXCkr3e",
-        "DcSMeELGzuA",
-        "DcSTGypoE52",
-        "DcSKwLQnKsp"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "ids": [
         "DcS2beZmBw7",
         "DcNdHnECSWn",
         "DcGAyXCkr3e",
@@ -2997,6 +2982,11 @@
         "⚠️ 警示型",
         "🔄 顛覆型"
       ]
+    },
+    {
+      "date": "2026-09-05",
+      "ids": [],
+      "categories": []
     }
   ]
 }
