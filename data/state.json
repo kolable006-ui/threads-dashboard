@@ -2631,21 +2631,6 @@
   },
   "script_history": [
     {
-      "date": "2026-08-22",
-      "ids": [
-        "DcVZZfdIE5z",
-        "DcTSuinnZNK",
-        "DcAFRHhkxTp",
-        "DcVRv4elHXY"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
-    {
       "date": "2026-08-23",
       "ids": [
         "DcKF2cdnaHY",
@@ -2966,6 +2951,15 @@
       "date": "2026-09-05",
       "ids": [],
       "categories": []
+    },
+    {
+      "date": "2026-09-06",
+      "ids": [
+        "DcnUSPjESs2"
+      ],
+      "categories": [
+        "🤔 好奇型"
+      ]
     },
     {
       "date": "2026-09-06",
