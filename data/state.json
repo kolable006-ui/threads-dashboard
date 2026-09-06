@@ -2633,17 +2633,6 @@
     {
       "date": "2026-08-22",
       "ids": [
-        "DcR_r9gEo9L",
-        "DcVAb6WAmjZ"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型"
-      ]
-    },
-    {
-      "date": "2026-08-22",
-      "ids": [
         "DcVZZfdIE5z",
         "DcTSuinnZNK",
         "DcAFRHhkxTp",
@@ -2977,6 +2966,15 @@
       "date": "2026-09-05",
       "ids": [],
       "categories": []
+    },
+    {
+      "date": "2026-09-06",
+      "ids": [
+        "DcnUSPjESs2"
+      ],
+      "categories": [
+        "🤔 好奇型"
+      ]
     }
   ]
 }
