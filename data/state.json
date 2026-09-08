@@ -2627,20 +2627,13 @@
     "Dc1A7BnGZHV": {
       "likes": 1780,
       "first_date": "2026-09-04"
+    },
+    "DcvYJQ7EzeQ": {
+      "likes": 4567,
+      "first_date": "2026-09-08"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-24",
-      "ids": [
-        "DcPxEElkc_y",
-        "Db2LEvMkcEi"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型"
-      ]
-    },
     {
       "date": "2026-08-25",
       "ids": [
@@ -2949,6 +2942,15 @@
       "date": "2026-09-08",
       "ids": [],
       "categories": []
+    },
+    {
+      "date": "2026-09-08",
+      "ids": [
+        "DcvYJQ7EzeQ"
+      ],
+      "categories": [
+        "🤔 好奇型"
+      ]
     }
   ]
 }
