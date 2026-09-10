@@ -2621,7 +2621,7 @@
       "first_date": "2026-09-03"
     },
     "DcnUSPjESs2": {
-      "likes": 2383,
+      "likes": 2384,
       "first_date": "2026-09-04"
     },
     "Dc1A7BnGZHV": {
@@ -2651,20 +2651,17 @@
     "Dc16hv3Dxpt": {
       "likes": 18000,
       "first_date": "2026-09-09"
+    },
+    "DdGZz1TGSEB": {
+      "likes": null,
+      "first_date": "2026-09-10"
+    },
+    "DdGWCeTkUMV": {
+      "likes": null,
+      "first_date": "2026-09-10"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-26",
-      "ids": [
-        "Db2LEvMkcEi",
-        "DcF1sDXERDY"
-      ],
-      "categories": [
-        "🔥 萬用開頭",
-        "🤔 好奇型"
-      ]
-    },
     {
       "date": "2026-08-26",
       "ids": [
@@ -2972,6 +2969,19 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "ids": [
+        "DdGZz1TGSEB",
+        "DdGWCeTkUMV",
+        "DcnUSPjESs2"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型"
       ]
     }
   ]
