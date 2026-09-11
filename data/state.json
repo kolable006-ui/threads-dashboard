@@ -2659,24 +2659,13 @@
     "DdGWCeTkUMV": {
       "likes": null,
       "first_date": "2026-09-10"
+    },
+    "DdG9fjjoGdh": {
+      "likes": 5420,
+      "first_date": "2026-09-11"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-27",
-      "ids": [
-        "Dchf_qIj7eX",
-        "DcVTRHnAoKW",
-        "DchcGSMAapD",
-        "DcfPEu4kSkp"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-08-27",
       "ids": [
@@ -2975,6 +2964,17 @@
         "DcnUSPjESs2"
       ],
       "categories": [
+        "🤔 好奇型"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "ids": [
+        "DdG9fjjoGdh",
+        "DcnUSPjESs2"
+      ],
+      "categories": [
+        "🔥 萬用開頭",
         "🤔 好奇型"
       ]
     }
