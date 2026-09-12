@@ -2663,20 +2663,13 @@
     "DdG9fjjoGdh": {
       "likes": 5420,
       "first_date": "2026-09-11"
+    },
+    "DdLkn2lCcDL": {
+      "likes": null,
+      "first_date": "2026-09-12"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-28",
-      "ids": [
-        "DckZ3J_GCQm",
-        "DclMGxMgRx6"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型"
-      ]
-    },
     {
       "date": "2026-08-28",
       "ids": [
@@ -2969,6 +2962,15 @@
       "date": "2026-09-11",
       "ids": [],
       "categories": []
+    },
+    {
+      "date": "2026-09-12",
+      "ids": [
+        "DdLkn2lCcDL"
+      ],
+      "categories": [
+        "🤔 好奇型"
+      ]
     }
   ]
 }
