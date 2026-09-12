@@ -2633,7 +2633,7 @@
       "first_date": "2026-09-08"
     },
     "DdBv9NBidwZ": {
-      "likes": 6086,
+      "likes": 6806,
       "first_date": "2026-09-09"
     },
     "DdCB0MSCYSI": {
@@ -2670,17 +2670,6 @@
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-28",
-      "ids": [
-        "DckKLhlEwfj",
-        "DcPxEElkc_y"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型"
-      ]
-    },
     {
       "date": "2026-08-29",
       "ids": [
@@ -2967,6 +2956,15 @@
       "date": "2026-09-12",
       "ids": [
         "DdLkn2lCcDL"
+      ],
+      "categories": [
+        "🤔 好奇型"
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "ids": [
+        "DdBv9NBidwZ"
       ],
       "categories": [
         "🤔 好奇型"
