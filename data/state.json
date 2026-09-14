@@ -2671,20 +2671,13 @@
     "DdOHjAbgbDE": {
       "likes": null,
       "first_date": "2026-09-13"
+    },
+    "DdQ1xN6EjNK": {
+      "likes": null,
+      "first_date": "2026-09-14"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-30",
-      "ids": [
-        "DcqNwYtEu3a",
-        "DcR_r9gEo9L"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型"
-      ]
-    },
     {
       "date": "2026-08-30",
       "ids": [
@@ -2965,6 +2958,15 @@
       "date": "2026-09-13",
       "ids": [
         "DcnUSPjESs2"
+      ],
+      "categories": [
+        "🤔 好奇型"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "ids": [
+        "DdQ1xN6EjNK"
       ],
       "categories": [
         "🤔 好奇型"
