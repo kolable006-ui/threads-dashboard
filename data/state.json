@@ -2687,22 +2687,21 @@
     "DdTXyTlkiVb": {
       "likes": null,
       "first_date": "2026-09-15"
+    },
+    "DdIbbhDk2i7": {
+      "likes": 2602,
+      "first_date": "2026-09-15"
+    },
+    "DdTvC5MDa5q": {
+      "likes": null,
+      "first_date": "2026-09-15"
+    },
+    "DdTtkKOiU8-": {
+      "likes": null,
+      "first_date": "2026-09-15"
     }
   },
   "script_history": [
-    {
-      "date": "2026-08-31",
-      "ids": [
-        "Dcsnr5gGbfX",
-        "DcR_r9gEo9L",
-        "DcSQblAkxK_"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型"
-      ]
-    },
     {
       "date": "2026-09-01",
       "ids": [
@@ -2976,6 +2975,19 @@
       "categories": [
         "🤔 好奇型",
         "⚠️ 警示型"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "ids": [
+        "DdTtkKOiU8-",
+        "DdIbbhDk2i7",
+        "DdTvC5MDa5q"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型"
       ]
     }
   ]
