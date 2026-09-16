@@ -2699,22 +2699,13 @@
     "DdTtkKOiU8-": {
       "likes": null,
       "first_date": "2026-09-15"
+    },
+    "DdWTWsTFjGH": {
+      "likes": null,
+      "first_date": "2026-09-16"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-01",
-      "ids": [
-        "Dcuqn5NoGDR",
-        "DcPxEElkc_y",
-        "DcF1sDXERDY"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型"
-      ]
-    },
     {
       "date": "2026-09-02",
       "ids": [],
@@ -2985,6 +2976,15 @@
       "date": "2026-09-16",
       "ids": [
         "DdIbbhDk2i7"
+      ],
+      "categories": [
+        "🤔 好奇型"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "ids": [
+        "DdWTWsTFjGH"
       ],
       "categories": [
         "🤔 好奇型"
