@@ -2703,14 +2703,13 @@
     "DdWTWsTFjGH": {
       "likes": null,
       "first_date": "2026-09-16"
+    },
+    "DdYiEcTiWa5": {
+      "likes": null,
+      "first_date": "2026-09-17"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-02",
-      "ids": [],
-      "categories": []
-    },
     {
       "date": "2026-09-02",
       "ids": [
@@ -2988,6 +2987,15 @@
       ],
       "categories": [
         "🤔 好奇型"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "ids": [
+        "DdYiEcTiWa5"
+      ],
+      "categories": [
+        "🪞 代入型"
       ]
     }
   ]
