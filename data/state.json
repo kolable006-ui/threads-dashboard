@@ -2707,24 +2707,17 @@
     "DdYiEcTiWa5": {
       "likes": null,
       "first_date": "2026-09-17"
+    },
+    "DdY4EyBk6Mq": {
+      "likes": null,
+      "first_date": "2026-09-17"
+    },
+    "DdY4Dz3lIk3": {
+      "likes": null,
+      "first_date": "2026-09-17"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-02",
-      "ids": [
-        "Dcs1Y8lma8L",
-        "DcwyRo9iAgo",
-        "DcxbMQKIGWQ",
-        "DcPxEElkc_y"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-09-03",
       "ids": [
@@ -2996,6 +2989,17 @@
       ],
       "categories": [
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "ids": [
+        "DdY4EyBk6Mq",
+        "DdY4Dz3lIk3"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型"
       ]
     }
   ]
