@@ -2759,22 +2759,13 @@
     "DddmhD3j98f": {
       "likes": null,
       "first_date": "2026-09-19"
+    },
+    "Ddc32hDE11i": {
+      "likes": 1684,
+      "first_date": "2026-09-19"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-04",
-      "ids": [
-        "DcTSuinnZNK",
-        "DcnUSPjESs2",
-        "Dc1A7BnGZHV"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型"
-      ]
-    },
     {
       "date": "2026-09-05",
       "ids": [],
@@ -3050,6 +3041,15 @@
       ],
       "categories": [
         "🔥 萬用開頭"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "ids": [
+        "Ddc32hDE11i"
+      ],
+      "categories": [
+        "🤔 好奇型"
       ]
     }
   ]
