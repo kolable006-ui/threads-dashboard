@@ -2755,20 +2755,13 @@
     "DdbaKTYGsDz": {
       "likes": null,
       "first_date": "2026-09-18"
+    },
+    "DddmhD3j98f": {
+      "likes": null,
+      "first_date": "2026-09-19"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-04",
-      "ids": [
-        "DcnUSPjESs2",
-        "Dc1A7BnGZHV"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型"
-      ]
-    },
     {
       "date": "2026-09-04",
       "ids": [
@@ -3048,6 +3041,15 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "ids": [
+        "DddmhD3j98f"
+      ],
+      "categories": [
+        "🔥 萬用開頭"
       ]
     }
   ]
