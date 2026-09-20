@@ -2787,14 +2787,21 @@
     "DdgG2s9jkFW": {
       "likes": null,
       "first_date": "2026-09-20"
+    },
+    "DdgOm7EESN0": {
+      "likes": 1069,
+      "first_date": "2026-09-20"
+    },
+    "DdglDIUj607": {
+      "likes": null,
+      "first_date": "2026-09-20"
+    },
+    "DdglE3qE9KQ": {
+      "likes": null,
+      "first_date": "2026-09-20"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-05",
-      "ids": [],
-      "categories": []
-    },
     {
       "date": "2026-09-06",
       "ids": [
@@ -3084,6 +3091,19 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "ids": [
+        "DdgOm7EESN0",
+        "DdglDIUj607",
+        "DdglE3qE9KQ"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型"
       ]
     }
   ]
