@@ -2799,18 +2799,33 @@
     "DdglE3qE9KQ": {
       "likes": null,
       "first_date": "2026-09-20"
+    },
+    "DdIkJFNE69F": {
+      "likes": 2137,
+      "first_date": "2026-09-21"
+    },
+    "DdgmpQkkltk": {
+      "likes": 1544,
+      "first_date": "2026-09-21"
+    },
+    "Ddi4hEclKHT": {
+      "likes": null,
+      "first_date": "2026-09-21"
+    },
+    "Ddi4irkEtZP": {
+      "likes": null,
+      "first_date": "2026-09-21"
+    },
+    "Ddi3qk0kiDU": {
+      "likes": null,
+      "first_date": "2026-09-21"
+    },
+    "Ddi0qxBn5rJ": {
+      "likes": null,
+      "first_date": "2026-09-21"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-06",
-      "ids": [
-        "DcnUSPjESs2"
-      ],
-      "categories": [
-        "🤔 好奇型"
-      ]
-    },
     {
       "date": "2026-09-06",
       "ids": [
@@ -3104,6 +3119,21 @@
         "🤔 好奇型",
         "⚠️ 警示型",
         "🔄 顛覆型"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "ids": [
+        "DdIkJFNE69F",
+        "DdgmpQkkltk",
+        "Ddi4hEclKHT",
+        "Ddi4irkEtZP"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
       ]
     }
   ]
