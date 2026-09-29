@@ -2837,7 +2837,7 @@
       "first_date": "2026-09-22"
     },
     "DdkxiCUEwVF": {
-      "likes": 5988,
+      "likes": 5989,
       "first_date": "2026-09-22"
     },
     "DdjbrMejzmi": {
@@ -2962,17 +2962,6 @@
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-14",
-      "ids": [
-        "DdRTPzNE6-9",
-        "DcnUSPjESs2"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型"
-      ]
-    },
     {
       "date": "2026-09-15",
       "ids": [
@@ -3352,6 +3341,17 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "ids": [
+        "DdkxiCUEwVF",
+        "DdiZCU4GJ3m"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型"
       ]
     }
   ]
