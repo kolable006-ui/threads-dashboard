@@ -2741,7 +2741,7 @@
       "first_date": "2026-09-18"
     },
     "DdZER2VE9hv": {
-      "likes": 9851,
+      "likes": 15000,
       "first_date": "2026-09-18"
     },
     "DdbaXCciaIc": {
@@ -2837,7 +2837,7 @@
       "first_date": "2026-09-22"
     },
     "DdkxiCUEwVF": {
-      "likes": 6003,
+      "likes": 6006,
       "first_date": "2026-09-22"
     },
     "DdjbrMejzmi": {
@@ -2989,24 +2989,59 @@
       "first_date": "2026-10-01"
     },
     "Dd74G0oCQfN": {
-      "likes": 1537,
+      "likes": 2725,
       "first_date": "2026-10-01"
     },
     "Dd9BJddGXP2": {
       "likes": null,
       "first_date": "2026-10-01"
+    },
+    "Dd-9Z9gIG3w": {
+      "likes": 11000,
+      "first_date": "2026-10-02"
+    },
+    "DdyoZ22E_Kv": {
+      "likes": 6419,
+      "first_date": "2026-10-02"
+    },
+    "Ddia5NvGejz": {
+      "likes": 4341,
+      "first_date": "2026-10-02"
+    },
+    "Dd-oY-KmF2Q": {
+      "likes": 2430,
+      "first_date": "2026-10-02"
+    },
+    "Dd-DTppgfUA": {
+      "likes": 1365,
+      "first_date": "2026-10-02"
+    },
+    "Dd_D6R0FK3i": {
+      "likes": 1255,
+      "first_date": "2026-10-02"
+    },
+    "Dd_Nh0Nj4-i": {
+      "likes": null,
+      "first_date": "2026-10-02"
+    },
+    "Dd_RXwynY8-": {
+      "likes": null,
+      "first_date": "2026-10-02"
+    },
+    "Dd_RV7lCfNH": {
+      "likes": null,
+      "first_date": "2026-10-02"
+    },
+    "Dd_RW48n7tY": {
+      "likes": null,
+      "first_date": "2026-10-02"
+    },
+    "Dd_RZu8I7MG": {
+      "likes": null,
+      "first_date": "2026-10-02"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-17",
-      "ids": [
-        "DdYiEcTiWa5"
-      ],
-      "categories": [
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-09-17",
       "ids": [
@@ -3398,6 +3433,21 @@
         "🤔 好奇型",
         "⚠️ 警示型",
         "🔄 顛覆型"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "ids": [
+        "DdZER2VE9hv",
+        "Dd-9Z9gIG3w",
+        "Ddia5NvGejz",
+        "DdyoZ22E_Kv"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
       ]
     }
   ]
