@@ -2725,7 +2725,7 @@
       "first_date": "2026-09-18"
     },
     "DdYjKKhlJ-A": {
-      "likes": 7562,
+      "likes": 7573,
       "first_date": "2026-09-18"
     },
     "DdX0DSbE9f_": {
@@ -2989,7 +2989,7 @@
       "first_date": "2026-10-01"
     },
     "Dd74G0oCQfN": {
-      "likes": 2725,
+      "likes": 2739,
       "first_date": "2026-10-01"
     },
     "Dd9BJddGXP2": {
@@ -3009,7 +3009,7 @@
       "first_date": "2026-10-02"
     },
     "Dd-oY-KmF2Q": {
-      "likes": 2430,
+      "likes": 3038,
       "first_date": "2026-10-02"
     },
     "Dd-DTppgfUA": {
@@ -3039,20 +3039,41 @@
     "Dd_RZu8I7MG": {
       "likes": null,
       "first_date": "2026-10-02"
+    },
+    "Dd_oxSCE3sG": {
+      "likes": null,
+      "first_date": "2026-10-02"
+    },
+    "Dd_ozICD8Eg": {
+      "likes": null,
+      "first_date": "2026-10-02"
+    },
+    "Dd_oyEzkw20": {
+      "likes": null,
+      "first_date": "2026-10-02"
+    },
+    "Dd_ozvGCS5x": {
+      "likes": null,
+      "first_date": "2026-10-02"
+    },
+    "Dd_ozvKH0sH": {
+      "likes": null,
+      "first_date": "2026-10-02"
+    },
+    "Dd_o1dwjyuu": {
+      "likes": null,
+      "first_date": "2026-10-02"
+    },
+    "Dd_o12ECcM1": {
+      "likes": null,
+      "first_date": "2026-10-02"
+    },
+    "Dd_o0RyGfIr": {
+      "likes": null,
+      "first_date": "2026-10-02"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-17",
-      "ids": [
-        "DdY4EyBk6Mq",
-        "DdY4Dz3lIk3"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型"
-      ]
-    },
     {
       "date": "2026-09-18",
       "ids": [
@@ -3442,6 +3463,21 @@
         "Dd-9Z9gIG3w",
         "Ddia5NvGejz",
         "DdyoZ22E_Kv"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "ids": [
+        "Dd-oY-KmF2Q",
+        "Dd_oxSCE3sG",
+        "Dd_ozICD8Eg",
+        "Dd_oyEzkw20"
       ],
       "categories": [
         "🤔 好奇型",
