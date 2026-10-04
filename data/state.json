@@ -2989,7 +2989,7 @@
       "first_date": "2026-10-01"
     },
     "Dd74G0oCQfN": {
-      "likes": 2739,
+      "likes": 2808,
       "first_date": "2026-10-01"
     },
     "Dd9BJddGXP2": {
@@ -3099,18 +3099,25 @@
     "DeA2Ox8E9rO": {
       "likes": 1919,
       "first_date": "2026-10-03"
+    },
+    "DdpKzrgkhzI": {
+      "likes": 1143,
+      "first_date": "2026-10-04"
+    },
+    "DeEazBhHcVJ": {
+      "likes": null,
+      "first_date": "2026-10-04"
+    },
+    "DeEYClMEjkU": {
+      "likes": null,
+      "first_date": "2026-10-04"
+    },
+    "DeEZycZEroo": {
+      "likes": null,
+      "first_date": "2026-10-04"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-19",
-      "ids": [
-        "DddmhD3j98f"
-      ],
-      "categories": [
-        "🔥 萬用開頭"
-      ]
-    },
     {
       "date": "2026-09-19",
       "ids": [
@@ -3506,6 +3513,21 @@
         "DeA2Ox8E9rO",
         "Dd-9Z9gIG3w",
         "Ddia5NvGejz"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "ids": [
+        "DdpKzrgkhzI",
+        "DeEZycZEroo",
+        "DeEazBhHcVJ",
+        "DeEYClMEjkU"
       ],
       "categories": [
         "🤔 好奇型",
