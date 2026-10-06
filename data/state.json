@@ -2869,7 +2869,7 @@
       "first_date": "2026-09-23"
     },
     "Ddne_Xvk0T-": {
-      "likes": 2886,
+      "likes": 2904,
       "first_date": "2026-09-24"
     },
     "Ddoe44yErZZ": {
@@ -2957,7 +2957,7 @@
       "first_date": "2026-09-28"
     },
     "Dd1DKdhkzjD": {
-      "likes": 2340,
+      "likes": 2343,
       "first_date": "2026-09-29"
     },
     "Dd4K1XrAu5E": {
@@ -2989,7 +2989,7 @@
       "first_date": "2026-10-01"
     },
     "Dd74G0oCQfN": {
-      "likes": 2849,
+      "likes": 2876,
       "first_date": "2026-10-01"
     },
     "Dd9BJddGXP2": {
@@ -3101,7 +3101,7 @@
       "first_date": "2026-10-03"
     },
     "DdpKzrgkhzI": {
-      "likes": 1144,
+      "likes": 1146,
       "first_date": "2026-10-04"
     },
     "DeEazBhHcVJ": {
@@ -3169,7 +3169,7 @@
       "first_date": "2026-10-05"
     },
     "DeGhrPvo1A1": {
-      "likes": 3763,
+      "likes": 9161,
       "first_date": "2026-10-05"
     },
     "DeHUJbokluT": {
@@ -3191,24 +3191,37 @@
     "DeGzXTPEURu": {
       "likes": 1198,
       "first_date": "2026-10-05"
+    },
+    "DeIncjek7Bh": {
+      "likes": 17000,
+      "first_date": "2026-10-06"
+    },
+    "Dd-yWTfEnaq": {
+      "likes": 2661,
+      "first_date": "2026-10-06"
+    },
+    "DeGhhavk_5_": {
+      "likes": 1893,
+      "first_date": "2026-10-06"
+    },
+    "DeBP04UERUX": {
+      "likes": 1662,
+      "first_date": "2026-10-06"
+    },
+    "DeG4kzRFFD5": {
+      "likes": 1235,
+      "first_date": "2026-10-06"
+    },
+    "DeGNDzrk_05": {
+      "likes": 1020,
+      "first_date": "2026-10-06"
+    },
+    "DeIzKcJH3Yw": {
+      "likes": null,
+      "first_date": "2026-10-06"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-21",
-      "ids": [
-        "DdIkJFNE69F",
-        "DdgmpQkkltk",
-        "Ddi4hEclKHT",
-        "Ddi4irkEtZP"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-09-21",
       "ids": [],
@@ -3612,6 +3625,21 @@
         "DeG2yEYGyqh",
         "DeHaoNhE92H",
         "Dd74G0oCQfN"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "ids": [
+        "DeIncjek7Bh",
+        "Ddne_Xvk0T-",
+        "DeG4kzRFFD5",
+        "DeGNDzrk_05"
       ],
       "categories": [
         "🤔 好奇型",
