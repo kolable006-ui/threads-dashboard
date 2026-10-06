@@ -2825,7 +2825,7 @@
       "first_date": "2026-09-21"
     },
     "DdiZCU4GJ3m": {
-      "likes": 1699,
+      "likes": 1698,
       "first_date": "2026-09-22"
     },
     "Ddkhv51CUHr": {
@@ -2941,7 +2941,7 @@
       "first_date": "2026-09-28"
     },
     "Ddn89Zlk06a": {
-      "likes": 1624,
+      "likes": 1627,
       "first_date": "2026-09-28"
     },
     "Dd04u1zm3lK": {
@@ -2989,7 +2989,7 @@
       "first_date": "2026-10-01"
     },
     "Dd74G0oCQfN": {
-      "likes": 2876,
+      "likes": 2878,
       "first_date": "2026-10-01"
     },
     "Dd9BJddGXP2": {
@@ -3101,7 +3101,7 @@
       "first_date": "2026-10-03"
     },
     "DdpKzrgkhzI": {
-      "likes": 1146,
+      "likes": 1147,
       "first_date": "2026-10-04"
     },
     "DeEazBhHcVJ": {
@@ -3133,7 +3133,7 @@
       "first_date": "2026-10-04"
     },
     "DeD1-OokS7A": {
-      "likes": 1101,
+      "likes": 1413,
       "first_date": "2026-10-04"
     },
     "DeER9L9kU_a": {
@@ -3169,7 +3169,7 @@
       "first_date": "2026-10-05"
     },
     "DeGhrPvo1A1": {
-      "likes": 9161,
+      "likes": 9240,
       "first_date": "2026-10-05"
     },
     "DeHUJbokluT": {
@@ -3205,28 +3205,31 @@
       "first_date": "2026-10-06"
     },
     "DeBP04UERUX": {
-      "likes": 1662,
+      "likes": 1663,
       "first_date": "2026-10-06"
     },
     "DeG4kzRFFD5": {
-      "likes": 1235,
+      "likes": 1236,
       "first_date": "2026-10-06"
     },
     "DeGNDzrk_05": {
-      "likes": 1020,
+      "likes": 1022,
       "first_date": "2026-10-06"
     },
     "DeIzKcJH3Yw": {
       "likes": null,
       "first_date": "2026-10-06"
+    },
+    "Dd8sRjnDxWT": {
+      "likes": 1254,
+      "first_date": "2026-10-06"
+    },
+    "Dd58U5xDzP_": {
+      "likes": 1019,
+      "first_date": "2026-10-06"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-21",
-      "ids": [],
-      "categories": []
-    },
     {
       "date": "2026-09-22",
       "ids": [
@@ -3640,6 +3643,21 @@
         "Ddne_Xvk0T-",
         "DeG4kzRFFD5",
         "DeGNDzrk_05"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "ids": [
+        "Ddn89Zlk06a",
+        "DeBP04UERUX",
+        "Dd8sRjnDxWT",
+        "Dd58U5xDzP_"
       ],
       "categories": [
         "🤔 好奇型",
