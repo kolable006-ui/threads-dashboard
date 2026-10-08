@@ -2989,7 +2989,7 @@
       "first_date": "2026-10-01"
     },
     "Dd74G0oCQfN": {
-      "likes": 2995,
+      "likes": 3002,
       "first_date": "2026-10-01"
     },
     "Dd9BJddGXP2": {
@@ -3101,7 +3101,7 @@
       "first_date": "2026-10-03"
     },
     "DdpKzrgkhzI": {
-      "likes": 1148,
+      "likes": 1150,
       "first_date": "2026-10-04"
     },
     "DeEazBhHcVJ": {
@@ -3129,7 +3129,7 @@
       "first_date": "2026-10-04"
     },
     "Dd6b0J7mtuT": {
-      "likes": 1620,
+      "likes": 1624,
       "first_date": "2026-10-04"
     },
     "DeD1-OokS7A": {
@@ -3229,7 +3229,7 @@
       "first_date": "2026-10-06"
     },
     "DeLlJPoE2uQ": {
-      "likes": 66000,
+      "likes": 96000,
       "first_date": "2026-10-07"
     },
     "DeL1mEvkdNm": {
@@ -3291,24 +3291,21 @@
     "DeNAV8RGgaO": {
       "likes": null,
       "first_date": "2026-10-08"
+    },
+    "Dd9boCdEw0_": {
+      "likes": 5713,
+      "first_date": "2026-10-08"
+    },
+    "DeDzLlcGk1n": {
+      "likes": 2100,
+      "first_date": "2026-10-08"
+    },
+    "DeLk2JiApdS": {
+      "likes": 1360,
+      "first_date": "2026-10-08"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-23",
-      "ids": [
-        "DdoUvc7kwFD",
-        "DdoFhfZlF2i",
-        "DdoV4mLjMgQ",
-        "DdYOxEekid6"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-09-24",
       "ids": [
@@ -3722,6 +3719,21 @@
         "DeNzMvTCboY",
         "DeOqbsqE1CY",
         "DeLKzTnCZQZ"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "ids": [
+        "Dd9boCdEw0_",
+        "DeDzLlcGk1n",
+        "DeLk2JiApdS",
+        "DeLlJPoE2uQ"
       ],
       "categories": [
         "🤔 好奇型",
