@@ -2989,7 +2989,7 @@
       "first_date": "2026-10-01"
     },
     "Dd74G0oCQfN": {
-      "likes": 3119,
+      "likes": 3123,
       "first_date": "2026-10-01"
     },
     "Dd9BJddGXP2": {
@@ -3073,7 +3073,7 @@
       "first_date": "2026-10-02"
     },
     "Dd8ZcmkkQCU": {
-      "likes": 7020,
+      "likes": 7023,
       "first_date": "2026-10-03"
     },
     "DdnUOKBk1hU": {
@@ -3413,7 +3413,7 @@
       "first_date": "2026-10-12"
     },
     "DeWbYVdn8WQ": {
-      "likes": 5237,
+      "likes": 5239,
       "first_date": "2026-10-12"
     },
     "DeZfeEFk07Y": {
@@ -3475,24 +3475,45 @@
     "Deea0j1o1Un": {
       "likes": null,
       "first_date": "2026-10-14"
+    },
+    "DegIkpWkaER": {
+      "likes": 4324,
+      "first_date": "2026-10-15"
+    },
+    "DeelLOwEuzh": {
+      "likes": 3584,
+      "first_date": "2026-10-15"
+    },
+    "DegaazdkR0J": {
+      "likes": 3273,
+      "first_date": "2026-10-15"
+    },
+    "DegO3hREj2f": {
+      "likes": 2789,
+      "first_date": "2026-10-15"
+    },
+    "Deea0iakp0s": {
+      "likes": 1503,
+      "first_date": "2026-10-15"
+    },
+    "DegmROUCZtw": {
+      "likes": null,
+      "first_date": "2026-10-15"
+    },
+    "Defz9ERgWNY": {
+      "likes": null,
+      "first_date": "2026-10-15"
+    },
+    "DegkUi0if1w": {
+      "likes": null,
+      "first_date": "2026-10-15"
+    },
+    "Degh-L-oCt_": {
+      "likes": null,
+      "first_date": "2026-10-15"
     }
   },
   "script_history": [
-    {
-      "date": "2026-09-30",
-      "ids": [
-        "Dd4K1XrAu5E",
-        "Dd6HoNoGK-O",
-        "Dd55-ciGrWp",
-        "DdYOxEekid6"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-09-30",
       "ids": [
@@ -3912,6 +3933,21 @@
         "DedRGU4AXk-",
         "Deea0j1o1Un",
         "DeaqCx_Gp4T"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "ids": [
+        "DegO3hREj2f",
+        "Defz9ERgWNY",
+        "DegkUi0if1w",
+        "DegIkpWkaER"
       ],
       "categories": [
         "🤔 好奇型",
