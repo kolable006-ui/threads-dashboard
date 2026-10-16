@@ -3541,15 +3541,6 @@
     {
       "date": "2026-10-01",
       "ids": [
-        "DdkxiCUEwVF"
-      ],
-      "categories": [
-        "🤔 好奇型"
-      ]
-    },
-    {
-      "date": "2026-10-01",
-      "ids": [
         "Dd74G0oCQfN",
         "Dd9BJddGXP2",
         "DdkxiCUEwVF"
@@ -3979,6 +3970,11 @@
         "🔄 顛覆型",
         "🪞 代入型"
       ]
+    },
+    {
+      "date": "2026-10-16",
+      "ids": [],
+      "categories": []
     }
   ]
 }
