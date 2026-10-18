@@ -3137,7 +3137,7 @@
       "first_date": "2026-10-04"
     },
     "DeER9L9kU_a": {
-      "likes": 1009,
+      "likes": 1617,
       "first_date": "2026-10-04"
     },
     "DeEtpZzE5_Q": {
@@ -3593,7 +3593,7 @@
       "first_date": "2026-10-18"
     },
     "Den9zdxIBW0": {
-      "likes": 1988,
+      "likes": 2798,
       "first_date": "2026-10-18"
     },
     "DenklK0E_wY": {
@@ -3601,7 +3601,7 @@
       "first_date": "2026-10-18"
     },
     "DeoF49qksHw": {
-      "likes": 1101,
+      "likes": 1653,
       "first_date": "2026-10-18"
     },
     "DemE5P6ExW7": {
@@ -3615,24 +3615,49 @@
     "DeoPU6XH44J": {
       "likes": null,
       "first_date": "2026-10-18"
+    },
+    "DemHVMaGKhl": {
+      "likes": 2851,
+      "first_date": "2026-10-18"
+    },
+    "DelTsbjCEYC": {
+      "likes": 2122,
+      "first_date": "2026-10-18"
+    },
+    "DeOcfRDjQM2": {
+      "likes": 1000,
+      "first_date": "2026-10-18"
+    },
+    "Deoo3fXH6-q": {
+      "likes": null,
+      "first_date": "2026-10-18"
+    },
+    "DeoblI-E2bd": {
+      "likes": null,
+      "first_date": "2026-10-18"
+    },
+    "Demuz2PHwlQ": {
+      "likes": null,
+      "first_date": "2026-10-18"
+    },
+    "DemuPwoE0Tn": {
+      "likes": null,
+      "first_date": "2026-10-18"
+    },
+    "DenxD8nE83c": {
+      "likes": null,
+      "first_date": "2026-10-18"
+    },
+    "Deooh1OgWzQ": {
+      "likes": null,
+      "first_date": "2026-10-18"
+    },
+    "DeopBU_jw_b": {
+      "likes": null,
+      "first_date": "2026-10-18"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-03",
-      "ids": [
-        "Dd_oky9FLzr",
-        "DeA2Ox8E9rO",
-        "Dd-9Z9gIG3w",
-        "Ddia5NvGejz"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-10-04",
       "ids": [
@@ -4050,6 +4075,21 @@
         "Den9zdxIBW0",
         "DenklK0E_wY",
         "DeoRFHBDQCH"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "ids": [
+        "DelTsbjCEYC",
+        "DeER9L9kU_a",
+        "Deoo3fXH6-q",
+        "DeoblI-E2bd"
       ],
       "categories": [
         "🤔 好奇型",
