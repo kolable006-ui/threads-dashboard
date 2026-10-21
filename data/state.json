@@ -3723,24 +3723,17 @@
     "DevV9raky4b": {
       "likes": 1551,
       "first_date": "2026-10-21"
+    },
+    "Dewcz2gE7i_": {
+      "likes": null,
+      "first_date": "2026-10-21"
+    },
+    "DewdGAoDwja": {
+      "likes": null,
+      "first_date": "2026-10-21"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-06",
-      "ids": [
-        "Ddn89Zlk06a",
-        "DeBP04UERUX",
-        "Dd8sRjnDxWT",
-        "Dd58U5xDzP_"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-10-07",
       "ids": [
@@ -4158,6 +4151,17 @@
       ],
       "categories": [
         "🔥 萬用開頭"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "ids": [
+        "Dewcz2gE7i_",
+        "DewdGAoDwja"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型"
       ]
     }
   ]
