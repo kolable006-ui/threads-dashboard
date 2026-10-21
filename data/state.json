@@ -3719,24 +3719,13 @@
     "Derki9lk-Y3": {
       "likes": null,
       "first_date": "2026-10-20"
+    },
+    "DevV9raky4b": {
+      "likes": 1551,
+      "first_date": "2026-10-21"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-06",
-      "ids": [
-        "DeIncjek7Bh",
-        "Ddne_Xvk0T-",
-        "DeG4kzRFFD5",
-        "DeGNDzrk_05"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-10-06",
       "ids": [
@@ -4160,6 +4149,15 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "ids": [
+        "DevV9raky4b"
+      ],
+      "categories": [
+        "🔥 萬用開頭"
       ]
     }
   ]
