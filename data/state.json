@@ -3807,24 +3807,17 @@
     "De3vOJTFZ7H": {
       "likes": null,
       "first_date": "2026-10-24"
+    },
+    "De3m1cIiWGv": {
+      "likes": 2658,
+      "first_date": "2026-10-24"
+    },
+    "De4Fhhskuz7": {
+      "likes": null,
+      "first_date": "2026-10-24"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-09",
-      "ids": [
-        "DePHW0EmcxH",
-        "DeRDy5FEoaJ",
-        "DeQrmpAkSaK",
-        "DeHCj5_k7hk"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-10-10",
       "ids": [
@@ -4232,6 +4225,19 @@
       ],
       "categories": [
         "🤔 好奇型"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "ids": [
+        "De4Fhhskuz7",
+        "De3m1cIiWGv",
+        "Deb8pvoEpu-"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型"
       ]
     }
   ]
