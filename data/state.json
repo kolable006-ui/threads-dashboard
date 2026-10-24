@@ -3803,24 +3803,13 @@
     "De1c0K0FDt5": {
       "likes": null,
       "first_date": "2026-10-23"
+    },
+    "De3vOJTFZ7H": {
+      "likes": null,
+      "first_date": "2026-10-24"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-09",
-      "ids": [
-        "DeO43bmFAQ2",
-        "DeRR434Hzj8",
-        "DeRXVHVDedn",
-        "DeNNpbEmlye"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-10-09",
       "ids": [
@@ -4234,6 +4223,15 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "ids": [
+        "De3vOJTFZ7H"
+      ],
+      "categories": [
+        "🤔 好奇型"
       ]
     }
   ]
