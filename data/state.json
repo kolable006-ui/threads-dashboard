@@ -3905,7 +3905,7 @@
       "first_date": "2026-10-26"
     },
     "De6DeNmj-5F": {
-      "likes": 1644,
+      "likes": 1655,
       "first_date": "2026-10-26"
     },
     "De0mvMcGCuZ": {
@@ -3923,24 +3923,61 @@
     "De9f11tjyZ2": {
       "likes": null,
       "first_date": "2026-10-26"
+    },
+    "De-2l9TI1LA": {
+      "likes": 2982,
+      "first_date": "2026-10-27"
+    },
+    "De9bLR0E7Qn": {
+      "likes": 1395,
+      "first_date": "2026-10-27"
+    },
+    "De9KN5qE10B": {
+      "likes": 1250,
+      "first_date": "2026-10-27"
+    },
+    "DewSH2IE-GK": {
+      "likes": 1195,
+      "first_date": "2026-10-27"
+    },
+    "De_jVKXEpJn": {
+      "likes": null,
+      "first_date": "2026-10-27"
+    },
+    "De86Uf7gRT2": {
+      "likes": null,
+      "first_date": "2026-10-27"
+    },
+    "De_cgMMEZD8": {
+      "likes": null,
+      "first_date": "2026-10-27"
+    },
+    "De9tUhlEiBj": {
+      "likes": null,
+      "first_date": "2026-10-27"
+    },
+    "De-hJAvk8nO": {
+      "likes": null,
+      "first_date": "2026-10-27"
+    },
+    "De_Af3AmUHd": {
+      "likes": null,
+      "first_date": "2026-10-27"
+    },
+    "De_ZiqUkVKy": {
+      "likes": null,
+      "first_date": "2026-10-27"
+    },
+    "De_BttCD-Fh": {
+      "likes": null,
+      "first_date": "2026-10-27"
+    },
+    "De_hl1LASNy": {
+      "likes": null,
+      "first_date": "2026-10-27"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-12",
-      "ids": [
-        "Dd8ZcmkkQCU",
-        "DdyoZ22E_Kv",
-        "DeZCHs2FK3j",
-        "DeZCZRwoAn6"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-10-12",
       "ids": [
@@ -4340,6 +4377,21 @@
         "De9f0SIk-_K",
         "De9RO4JjY5e",
         "De8qhVTk-1c"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "ids": [
+        "DewSH2IE-GK",
+        "De_jVKXEpJn",
+        "De_ZiqUkVKy",
+        "De_BttCD-Fh"
       ],
       "categories": [
         "🤔 好奇型",
