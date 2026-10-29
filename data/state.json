@@ -4049,7 +4049,7 @@
       "first_date": "2026-10-29"
     },
     "DfB-xRNkY09": {
-      "likes": 1109,
+      "likes": 1132,
       "first_date": "2026-10-29"
     },
     "DfEy9saCdy3": {
@@ -4071,24 +4071,61 @@
     "DfEz3DAEzSu": {
       "likes": null,
       "first_date": "2026-10-29"
+    },
+    "DfEMT-cE1PL": {
+      "likes": 1144,
+      "first_date": "2026-10-29"
+    },
+    "DfFHnfwjd77": {
+      "likes": null,
+      "first_date": "2026-10-29"
+    },
+    "DfFKjIyiLrP": {
+      "likes": null,
+      "first_date": "2026-10-29"
+    },
+    "DfFMbGhkzgy": {
+      "likes": null,
+      "first_date": "2026-10-29"
+    },
+    "DfDsFs3DfqF": {
+      "likes": null,
+      "first_date": "2026-10-29"
+    },
+    "DfEONeBnxax": {
+      "likes": null,
+      "first_date": "2026-10-29"
+    },
+    "DfDm61DE6xO": {
+      "likes": null,
+      "first_date": "2026-10-29"
+    },
+    "DfEmAJ8gslL": {
+      "likes": null,
+      "first_date": "2026-10-29"
+    },
+    "DfFKSv7k3HH": {
+      "likes": null,
+      "first_date": "2026-10-29"
+    },
+    "DfEVrNbCdt8": {
+      "likes": null,
+      "first_date": "2026-10-29"
+    },
+    "DfCI7JHmC1x": {
+      "likes": null,
+      "first_date": "2026-10-29"
+    },
+    "DfEhWv5j9ij": {
+      "likes": null,
+      "first_date": "2026-10-29"
+    },
+    "DfEabERkYqb": {
+      "likes": null,
+      "first_date": "2026-10-29"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-14",
-      "ids": [
-        "Deb1Y4ImSEs",
-        "DedRGU4AXk-",
-        "Deea0j1o1Un",
-        "DeaqCx_Gp4T"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-10-15",
       "ids": [
@@ -4494,6 +4531,21 @@
         "🤔 好奇型",
         "⚠️ 警示型",
         "🔄 顛覆型"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "ids": [
+        "DfDsFs3DfqF",
+        "DfEmAJ8gslL",
+        "DfCI7JHmC1x",
+        "DfEhWv5j9ij"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
       ]
     }
   ]
