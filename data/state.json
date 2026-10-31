@@ -4203,14 +4203,21 @@
     "DfHOKlekh3H": {
       "likes": null,
       "first_date": "2026-10-30"
+    },
+    "DeyfAtooFpV": {
+      "likes": 2015,
+      "first_date": "2026-10-31"
+    },
+    "DfG4dv6kdKU": {
+      "likes": 1339,
+      "first_date": "2026-10-31"
+    },
+    "DfJGgfGk_kD": {
+      "likes": null,
+      "first_date": "2026-10-31"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-16",
-      "ids": [],
-      "categories": []
-    },
     {
       "date": "2026-10-16",
       "ids": [
@@ -4626,6 +4633,19 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "ids": [
+        "DeyfAtooFpV",
+        "DfJGgfGk_kD",
+        "DfG4dv6kdKU"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型"
       ]
     }
   ]
