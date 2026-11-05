@@ -4399,18 +4399,21 @@
     "DfUxdN0Gd3m": {
       "likes": null,
       "first_date": "2026-11-04"
+    },
+    "DfWZLZzGf-R": {
+      "likes": 14000,
+      "first_date": "2026-11-05"
+    },
+    "DfU102ykzGU": {
+      "likes": 1200,
+      "first_date": "2026-11-05"
+    },
+    "DfWtDAFEj6X": {
+      "likes": 1055,
+      "first_date": "2026-11-05"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-21",
-      "ids": [
-        "DevV9raky4b"
-      ],
-      "categories": [
-        "🔥 萬用開頭"
-      ]
-    },
     {
       "date": "2026-10-21",
       "ids": [
@@ -4830,6 +4833,19 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "ids": [
+        "DfWZLZzGf-R",
+        "DfU102ykzGU",
+        "DfWtDAFEj6X"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型"
       ]
     }
   ]
