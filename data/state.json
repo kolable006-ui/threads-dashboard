@@ -4619,24 +4619,17 @@
     "DfhXaYAkQvy": {
       "likes": 5901,
       "first_date": "2026-11-10"
+    },
+    "Dfjq4Mykkbp": {
+      "likes": 22000,
+      "first_date": "2026-11-10"
+    },
+    "DfjOTnYE8xD": {
+      "likes": 22000,
+      "first_date": "2026-11-10"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-26",
-      "ids": [
-        "De8Ri1PmBEz",
-        "De9f0SIk-_K",
-        "De9RO4JjY5e",
-        "De8qhVTk-1c"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-10-27",
       "ids": [
@@ -5060,6 +5053,17 @@
       ],
       "categories": [
         "🤔 好奇型"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "ids": [
+        "Dfjq4Mykkbp",
+        "DfjOTnYE8xD"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型"
       ]
     }
   ]
