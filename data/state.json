@@ -4429,7 +4429,7 @@
       "first_date": "2026-11-06"
     },
     "DfYYcQgGUuf": {
-      "likes": 8603,
+      "likes": 9034,
       "first_date": "2026-11-06"
     },
     "DfYopQNkx8p": {
@@ -4513,7 +4513,7 @@
       "first_date": "2026-11-07"
     },
     "DfboscuEild": {
-      "likes": 1675,
+      "likes": 2223,
       "first_date": "2026-11-07"
     },
     "DfcS9zwF42b": {
@@ -4647,24 +4647,57 @@
     "DfmVHN1lHEK": {
       "likes": null,
       "first_date": "2026-11-11"
+    },
+    "Dfg1Q_bkrSy": {
+      "likes": 57000,
+      "first_date": "2026-11-12"
+    },
+    "DfoPvkan47P": {
+      "likes": 10000,
+      "first_date": "2026-11-12"
+    },
+    "DfYe4TRE82P": {
+      "likes": 6734,
+      "first_date": "2026-11-12"
+    },
+    "DfYz1ONGj0a": {
+      "likes": 1054,
+      "first_date": "2026-11-12"
+    },
+    "Dfo4SVCEug7": {
+      "likes": null,
+      "first_date": "2026-11-12"
+    },
+    "DfoB3Aqknm9": {
+      "likes": null,
+      "first_date": "2026-11-12"
+    },
+    "Dfo53KfmcJU": {
+      "likes": null,
+      "first_date": "2026-11-12"
+    },
+    "DfpEG56DD6N": {
+      "likes": null,
+      "first_date": "2026-11-12"
+    },
+    "DfpEUR_GGwp": {
+      "likes": null,
+      "first_date": "2026-11-12"
+    },
+    "Dfng1-AE4Lx": {
+      "likes": null,
+      "first_date": "2026-11-12"
+    },
+    "Dfo7TxbEnRp": {
+      "likes": null,
+      "first_date": "2026-11-12"
+    },
+    "DfoYD-HkuiF": {
+      "likes": null,
+      "first_date": "2026-11-12"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-27",
-      "ids": [
-        "De_7cAaE4ce",
-        "De-k0tqiXjV",
-        "De-uUYEkz3L",
-        "De6DeNmj-5F"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-10-28",
       "ids": [
@@ -5078,6 +5111,21 @@
         "DflZ3DlgTaD",
         "Dfj4F1wmS1Q",
         "DfmXafSkytF"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "ids": [
+        "Dfg1Q_bkrSy",
+        "DfoPvkan47P",
+        "DfYe4TRE82P",
+        "DfpEG56DD6N"
       ],
       "categories": [
         "🤔 好奇型",
