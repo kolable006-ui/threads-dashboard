@@ -4781,11 +4781,11 @@
       "first_date": "2026-11-13"
     },
     "DfqWAT6ks0T": {
-      "likes": 1944,
+      "likes": 2834,
       "first_date": "2026-11-13"
     },
     "DfqqqSljxe7": {
-      "likes": 1879,
+      "likes": 2640,
       "first_date": "2026-11-13"
     },
     "Dfry9TACBEG": {
@@ -4855,24 +4855,49 @@
     "DfsYSx2DKXF": {
       "likes": null,
       "first_date": "2026-11-14"
+    },
+    "Dfr4qEHj1Tx": {
+      "likes": 2096,
+      "first_date": "2026-11-14"
+    },
+    "Dfs83KOAfCP": {
+      "likes": 1777,
+      "first_date": "2026-11-14"
+    },
+    "Dfs1pTzESUU": {
+      "likes": 1511,
+      "first_date": "2026-11-14"
+    },
+    "DfUrfR5j0k_": {
+      "likes": 1309,
+      "first_date": "2026-11-14"
+    },
+    "DfuYgSKoODq": {
+      "likes": null,
+      "first_date": "2026-11-14"
+    },
+    "DfuWRKhm4-Q": {
+      "likes": null,
+      "first_date": "2026-11-14"
+    },
+    "DfuYn1Zgatw": {
+      "likes": null,
+      "first_date": "2026-11-14"
+    },
+    "DfuMQK2lSCM": {
+      "likes": null,
+      "first_date": "2026-11-14"
+    },
+    "DfuS9iWlGDS": {
+      "likes": null,
+      "first_date": "2026-11-14"
+    },
+    "DfuUXWQFrO8": {
+      "likes": null,
+      "first_date": "2026-11-14"
     }
   },
   "script_history": [
-    {
-      "date": "2026-10-30",
-      "ids": [
-        "DfBYyd6iaZu",
-        "DfGzdDjEfbe",
-        "DfG3GhgI1es",
-        "DfHACKEIQbJ"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-10-30",
       "ids": [
@@ -5292,6 +5317,21 @@
         "🤔 好奇型",
         "⚠️ 警示型",
         "🔄 顛覆型"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "ids": [
+        "DfUrfR5j0k_",
+        "DfuYn1Zgatw",
+        "DfuUXWQFrO8",
+        "Dfr4qEHj1Tx"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
       ]
     }
   ]
