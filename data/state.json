@@ -5061,21 +5061,6 @@
     {
       "date": "2026-11-02",
       "ids": [
-        "DfPL8skmJ2u",
-        "DfPOkVYklXu",
-        "DfPP1whiNKK",
-        "DfGOFXHE_Fz"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
-    {
-      "date": "2026-11-02",
-      "ids": [
         "DfPPfPzilt4",
         "DfHyWNJE_rU",
         "DfPT0mJkmvC",
@@ -5495,6 +5480,11 @@
         "🔄 顛覆型",
         "🪞 代入型"
       ]
+    },
+    {
+      "date": "2026-11-17",
+      "ids": [],
+      "categories": []
     }
   ]
 }
