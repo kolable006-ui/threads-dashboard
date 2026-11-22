@@ -4977,7 +4977,7 @@
       "first_date": "2026-11-16"
     },
     "DfoIuRfE-Xd": {
-      "likes": 1031,
+      "likes": 1042,
       "first_date": "2026-11-16"
     },
     "DfzX66MmXSd": {
@@ -5069,7 +5069,7 @@
       "first_date": "2026-11-18"
     },
     "Df1pc7MmroD": {
-      "likes": 1397,
+      "likes": 1416,
       "first_date": "2026-11-18"
     },
     "Df2HJAtksOK": {
@@ -5355,24 +5355,57 @@
     "DgAg5otGGN_": {
       "likes": null,
       "first_date": "2026-11-21"
+    },
+    "Df62h90lBmj": {
+      "likes": 5511,
+      "first_date": "2026-11-22"
+    },
+    "Df81QNIGXrW": {
+      "likes": 4910,
+      "first_date": "2026-11-22"
+    },
+    "Df54IFeEydT": {
+      "likes": 3072,
+      "first_date": "2026-11-22"
+    },
+    "DgCU9djGAji": {
+      "likes": 1449,
+      "first_date": "2026-11-22"
+    },
+    "DfyM3ECkYZc": {
+      "likes": 1396,
+      "first_date": "2026-11-22"
+    },
+    "DgCtVmCkqIR": {
+      "likes": null,
+      "first_date": "2026-11-22"
+    },
+    "DgCz0OqjaO9": {
+      "likes": null,
+      "first_date": "2026-11-22"
+    },
+    "DgB0eV1Go1j": {
+      "likes": null,
+      "first_date": "2026-11-22"
+    },
+    "DgBojfKkgbW": {
+      "likes": null,
+      "first_date": "2026-11-22"
+    },
+    "DgCzF1ilMmQ": {
+      "likes": null,
+      "first_date": "2026-11-22"
+    },
+    "DgCUe0rmdlb": {
+      "likes": null,
+      "first_date": "2026-11-22"
+    },
+    "DgCuFOgmXkQ": {
+      "likes": null,
+      "first_date": "2026-11-22"
     }
   },
   "script_history": [
-    {
-      "date": "2026-11-06",
-      "ids": [
-        "DfYbORID5Vc",
-        "DfZSBgrEqWO",
-        "DfYOD4Wk0av",
-        "DfZZHJ2HdZ1"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-11-07",
       "ids": [
@@ -5786,6 +5819,21 @@
         "⚠️ 警示型",
         "🔄 顛覆型",
         "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "ids": [
+        "Df62h90lBmj",
+        "DgCU9djGAji",
+        "DfyM3ECkYZc",
+        "DgCtVmCkqIR"
+      ],
+      "categories": [
+        "🔥 萬用開頭",
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型"
       ]
     }
   ]
