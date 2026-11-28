@@ -4977,7 +4977,7 @@
       "first_date": "2026-11-16"
     },
     "DfoIuRfE-Xd": {
-      "likes": 1045,
+      "likes": 1046,
       "first_date": "2026-11-16"
     },
     "DfzX66MmXSd": {
@@ -5281,7 +5281,7 @@
       "first_date": "2026-11-20"
     },
     "Df85SFOGPUA": {
-      "likes": 2536,
+      "likes": 5551,
       "first_date": "2026-11-20"
     },
     "Df8d6P-jREd": {
@@ -5533,7 +5533,7 @@
       "first_date": "2026-11-23"
     },
     "DgGvwG6iBql": {
-      "likes": 9694,
+      "likes": 9721,
       "first_date": "2026-11-24"
     },
     "DgH2_TPIMjh": {
@@ -5781,7 +5781,7 @@
       "first_date": "2026-11-27"
     },
     "DgFoL5-EiOq": {
-      "likes": 1022,
+      "likes": 1023,
       "first_date": "2026-11-27"
     },
     "DgP0TO6E32o": {
@@ -5839,24 +5839,29 @@
     "DgQMLTZo6gy": {
       "likes": null,
       "first_date": "2026-11-27"
+    },
+    "DgP3GBJgign": {
+      "likes": 3157,
+      "first_date": "2026-11-28"
+    },
+    "DgSRyvSo3Ec": {
+      "likes": null,
+      "first_date": "2026-11-28"
+    },
+    "DgSM8TPEyLi": {
+      "likes": null,
+      "first_date": "2026-11-28"
+    },
+    "DgSC0SGkdVJ": {
+      "likes": null,
+      "first_date": "2026-11-28"
+    },
+    "DgSOIUHkvV7": {
+      "likes": null,
+      "first_date": "2026-11-28"
     }
   },
   "script_history": [
-    {
-      "date": "2026-11-13",
-      "ids": [
-        "DfpstZSgUqS",
-        "DfglGcxgZbs",
-        "DfYTaq4n5-h",
-        "DfqnMNHjRMa"
-      ],
-      "categories": [
-        "🤔 好奇型",
-        "⚠️ 警示型",
-        "🔄 顛覆型",
-        "🪞 代入型"
-      ]
-    },
     {
       "date": "2026-11-13",
       "ids": [
@@ -6274,6 +6279,21 @@
         "DgO3Fi6Ez0g",
         "DgOltruiGI8",
         "Df_XQnakRkq"
+      ],
+      "categories": [
+        "🤔 好奇型",
+        "⚠️ 警示型",
+        "🔄 顛覆型",
+        "🪞 代入型"
+      ]
+    },
+    {
+      "date": "2026-11-28",
+      "ids": [
+        "DgP3GBJgign",
+        "Df85SFOGPUA",
+        "Df3cLjIkxvV",
+        "DfoIuRfE-Xd"
       ],
       "categories": [
         "🤔 好奇型",
